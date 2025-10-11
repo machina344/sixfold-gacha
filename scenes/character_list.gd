@@ -1,4 +1,4 @@
-extends MainMenu
+extends BasePage
 
 var game_board = []
 var board_width = 5
@@ -21,7 +21,7 @@ func _ready():
 	
 
 func _getWidth():
-	var test = PlayerData.characterBox[PlayerData.characterbox.size()-1]
+	var test = PlayerDataContainer.playerData.characterBox[PlayerDataContainer.playerData.characterbox.size()-1]
 	print(test)
 
 

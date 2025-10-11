@@ -1,4 +1,4 @@
-extends MainMenu
+extends BasePage
 
 var MultiSize = 10
 
@@ -16,19 +16,19 @@ func translate_unit_info():
 	if template.characterRarity == Rarity.Rarity.ULTRA_RARE: #UR rarity, takes the index in context of the URcharacters list.
 		print("UR " + template.name) # Prints the name and rarity of the unit to the console for posterity
 		await summon_image($UrOverlay, template) # Gets the visual indicator for the particular unit in order: Godot Object ID, Dictionary Object, Animation Object-Applicable String, and Character name (use find_key for key number)
-		PlayerData.add_character_to_box(template)
+		PlayerDataContainer.playerData.add_character_to_box(template)
 	elif template.characterRarity == Rarity.Rarity.SUPER_RARE: #Same as above, but SRs, and so on.
 		print("SR " + template.name)
 		await summon_image($SrOverlay, template)
-		PlayerData.add_character_to_box(template)
+		PlayerDataContainer.playerData.add_character_to_box(template)
 	elif template.characterRarity == Rarity.Rarity.RARE:
 		print("R " + template.name)
 		await summon_image($ROverlay, template)
-		PlayerData.add_character_to_box(template)
+		PlayerDataContainer.playerData.add_character_to_box(template)
 	elif template.characterRarity == Rarity.Rarity.COMMON:
 		print("C " + template.name)
 		await summon_image($COverlay, template)
-		PlayerData.add_character_to_box(template)
+		PlayerDataContainer.playerData.add_character_to_box(template)
 
 func summon_image(ID, template):
 	var summonFrame = ID # Gets the C/R/SR/UR Summon Frame

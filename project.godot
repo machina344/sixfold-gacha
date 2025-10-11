@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 UnitRegistry="*res://resources/unitRegistry.gd"
 Rarity="*res://resources/rarity.gd"
+PlayerDataContainer="*res://resources/playerDataContainer.gd"
 
 [display]
 
