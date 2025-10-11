@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://sgupjb5tvyfp"]
+
+[ext_resource type="Theme" uid="uid://c1vds42xiuak4" path="res://assets/interactables/buttons.tres" id="1_g5e2v"]
+[ext_resource type="Script" path="res://scenes/start_screen.gd" id="1_qp3qu"]
+[ext_resource type="Texture2D" uid="uid://chbhydmhsrihf" path="res://assets/backgrounds/TitleScreen.png" id="2_sg1bk"]
+
+[sub_resource type="GDScript" id="GDScript_yj7xn"]
+
+[node name="StartScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qp3qu")
+
+[node name="StartButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 619.0
+offset_right = 533.0
+offset_bottom = 790.0
+mouse_default_cursor_shape = 2
+theme = ExtResource("1_g5e2v")
+action_mode = 0
+text = "START"
+script = SubResource("GDScript_yj7xn")
+
+[node name="TitleScreen" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(358, 540)
+texture = ExtResource("2_sg1bk")
+
+[node name="HelpButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 247.0
+offset_top = 804.0
+offset_right = 490.0
+offset_bottom = 908.0
+theme = ExtResource("1_g5e2v")
+text = "help
+"
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="HelpButton" to="." method="_on_help_button_pressed"]

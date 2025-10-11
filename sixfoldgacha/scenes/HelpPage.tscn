@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://cbyivee8q54vq"]
+
+[ext_resource type="Script" path="res://scenes/help_page.gd" id="1_cdyba"]
+[ext_resource type="Texture2D" uid="uid://d5ceae1xaoan" path="res://assets/backgrounds/HelpPage.png" id="2_q0w2v"]
+[ext_resource type="Theme" uid="uid://c1vds42xiuak4" path="res://assets/interactables/buttons.tres" id="3_djj27"]
+
+[node name="HelpPage" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cdyba")
+
+[node name="HelpPage" type="Sprite2D" parent="."]
+position = Vector2(360, 539)
+texture = ExtResource("2_q0w2v")
+
+[node name="HelpBackButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 176.0
+offset_top = 778.0
+offset_right = 550.0
+offset_bottom = 960.0
+theme = ExtResource("3_djj27")
+text = "Back"
+
+[connection signal="pressed" from="HelpBackButton" to="." method="_on_help_back_button_pressed"]
+[connection signal="pressed" from="HelpBackButton" to="." method="_on_button_pressed"]

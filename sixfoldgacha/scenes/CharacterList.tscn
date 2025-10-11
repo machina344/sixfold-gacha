@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dsektaybkf54y"]
+
+[ext_resource type="Script" path="res://scenes/character_list.gd" id="1_1yo2r"]
+[ext_resource type="Theme" uid="uid://c1vds42xiuak4" path="res://assets/interactables/buttons.tres" id="1_la5e8"]
+
+[node name="CharacterList" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_1yo2r")
+
+[node name="MenuButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 931.0
+offset_right = 216.0
+offset_bottom = 1074.0
+theme = ExtResource("1_la5e8")
+text = "Menu"
+
+[connection signal="pressed" from="MenuButton" to="." method="_on_menu_button_pressed"]
