@@ -8,7 +8,9 @@ extends Resource
 @export var characterBox: Array[CharacterMainClass] = []
 
 func add_character_to_box(characterTemplate : unitTemplate):
-	characterBox.append(CharacterMainClass.new(characterTemplate))
+	var characterInstance = CharacterMainClass.new()
+	characterInstance._setTemplate(characterTemplate)
+	characterBox.append(characterInstance)
 	
 	
 func doAfterLoad():

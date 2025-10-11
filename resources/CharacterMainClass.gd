@@ -18,7 +18,7 @@ var charTemplate
 @export var Crit = 0
 @export var AddChance = 0
 
-func _init(template : unitTemplate):
+func _setTemplate(template : unitTemplate):
 	charTemplate = template
 	charID = template.characterID
 
