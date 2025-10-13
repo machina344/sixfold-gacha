@@ -25,3 +25,7 @@ PlayerDataContainer="*res://resources/playerDataContainer.gd"
 
 window/size/viewport_width=720
 window/size/viewport_height=1080
+
+[gui]
+
+theme/custom_font="res://assets/FOT-ChiaroStd-B.otf"

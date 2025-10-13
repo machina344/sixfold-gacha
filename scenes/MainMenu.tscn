@@ -14,15 +14,8 @@ script = ExtResource("1_g265n")
 position = Vector2(361, 540)
 texture = ExtResource("1_dqnpd")
 
-[node name="BackButton" type="Button" parent="."]
-offset_left = 10.0
-offset_top = 10.0
-offset_right = 215.0
-offset_bottom = 155.0
-theme = ExtResource("2_m1fgp")
-text = "Back to Main Menu"
-
 [node name="MainMenuButton" type="Button" parent="."]
+layout_mode = 0
 offset_left = 25.0
 offset_top = 933.0
 offset_right = 223.0
@@ -33,6 +26,7 @@ text = "Menu
 "
 
 [node name="SummonButton" type="Button" parent="."]
+layout_mode = 0
 offset_left = 231.0
 offset_top = 916.0
 offset_right = 512.0
@@ -41,6 +35,7 @@ theme = ExtResource("2_m1fgp")
 text = "Summon"
 
 [node name="CListButton" type="Button" parent="."]
+layout_mode = 0
 offset_left = 513.0
 offset_top = 925.0
 offset_right = 708.0
@@ -50,6 +45,7 @@ text = "Character List
 "
 
 [node name="PlayButton" type="Button" parent="."]
+layout_mode = 0
 offset_left = 4.0
 offset_top = 640.0
 offset_right = 715.0
@@ -63,6 +59,6 @@ position = Vector2(352, 86.5)
 scale = Vector2(2.45333, 1.93)
 texture = ExtResource("4_gh3wq")
 
-[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
 [connection signal="pressed" from="SummonButton" to="." method="_on_summon_button_pressed"]
 [connection signal="pressed" from="CListButton" to="." method="_on_c_list_button_pressed"]
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]

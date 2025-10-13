@@ -2,13 +2,28 @@ extends BasePage
 
 var MultiSize = 10
 
+@onready var multiButton = get_node("MultiSummon")
+@onready var singleButton = get_node("SingleSummon")
+
 func _on_single_summon_pressed():
-	await translate_unit_info() 
+	if PlayerDataContainer.playerData.premiumCurrency >= 10:
+		PlayerDataContainer.playerData.premiumCurrency -= 10
+		await translate_unit_info() 
+	else:
+		singleButton.text = "Not Enough Gems!"
+		await get_tree().create_timer(time_in_seconds).timeout
+		singleButton.text = "Single-Summon"
 
 func _on_multi_summon_pressed(): # Multi summon button
-	for n in MultiSize:
-		await translate_unit_info()
-		
+	if PlayerDataContainer.playerData.premiumCurrency >= 100:
+		PlayerDataContainer.playerData.premiumCurrency -= 100
+		for n in MultiSize:
+			await translate_unit_info()
+	else:
+		multiButton.text = "Not Enough Gems!"
+		await get_tree().create_timer(time_in_seconds).timeout
+		multiButton.text = "Multi-Summon"
+
 func translate_unit_info():
 	var template = UnitRegistry.getRandomTemplate() #Retrieving the information, will also use this function to translate the information into picture actions and more.
 	
