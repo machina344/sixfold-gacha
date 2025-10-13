@@ -7,7 +7,10 @@ extends Resource
 @export var premiumCurrency = 0
 @export var characterBox: Array[CharacterMainClass] = []
 
+signal characterAdded
+
 func add_character_to_box(characterTemplate : unitTemplate):
+	characterAdded.emit
 	var characterInstance = CharacterMainClass.new()
 	characterInstance._setTemplate(characterTemplate)
 	characterBox.append(characterInstance)
