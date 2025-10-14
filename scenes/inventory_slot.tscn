@@ -73,12 +73,8 @@ animations = [{
 [node name="Inventory_Slot" type="Control"]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 3
-anchor_right = 0.201
-anchor_bottom = 0.132
-offset_left = 4.0
-offset_top = 3.0
-offset_right = 9.28
-offset_bottom = 10.44
+anchor_right = 0.226
+anchor_bottom = 0.111
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_b3sf3")
@@ -90,8 +86,8 @@ anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 1.0
-offset_right = -1.0
-offset_bottom = 1.0
+offset_right = -9.72
+offset_bottom = -8.84
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -115,9 +111,9 @@ custom_minimum_size = Vector2(150, 150)
 layout_mode = 0
 offset_left = 1.0
 offset_top = -1.0
-offset_right = 145.0
-offset_bottom = 144.0
-color = Color(0, 1, 1, 0)
+offset_right = 153.0
+offset_bottom = 151.0
+color = Color(1, 1, 1, 0)
 
 [node name="TrainingButton" type="Button" parent="UsagePanel"]
 custom_minimum_size = Vector2(110, 40)
@@ -167,8 +163,10 @@ custom_minimum_size = Vector2(150, 150)
 layout_mode = 0
 offset_right = 150.0
 offset_bottom = 150.0
+mouse_filter = 1
 color = Color(1, 1, 1, 0)
 
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="mouse_exited" from="UsagePanel" to="." method="_on_usage_panel_mouse_exited"]
 [connection signal="pressed" from="UsagePanel/SellButton" to="." method="_on_sell_button_pressed"]
 [connection signal="gui_input" from="ColorRect" to="." method="_on_color_rect_gui_input"]
-[connection signal="mouse_exited" from="ColorRect" to="." method="_on_color_rect_mouse_exited"]

@@ -9,14 +9,14 @@ func _ready():
 func create_elements():
 	var premiumCurrencyLabel = Label.new()
 	premiumCurrencyLabel.text = str(PlayerDataContainer.playerData.premiumCurrency)
-	premiumCurrencyLabel.set_position(Vector2(488, 115))
+	premiumCurrencyLabel.set_position(Vector2(488, 135))
 	premiumCurrencyLabel.set("theme_override_colors/font_color", Color(0.39215687, 0.58431375, 0.92941177, 1))
 	add_child(premiumCurrencyLabel)
 	PlayerElements["premiumCurrency"] = premiumCurrencyLabel
 	
 	var freeCurrencyLabel = Label.new()
 	freeCurrencyLabel.text = str(PlayerDataContainer.playerData.coinCurrency)
-	freeCurrencyLabel.set_position(Vector2(500, 75))
+	freeCurrencyLabel.set_position(Vector2(500, 95))
 	freeCurrencyLabel.set("theme_override_colors/font_color", Color(1, 0.84313726, 0,1.0))
 	add_child(freeCurrencyLabel)
 	PlayerElements["freeCurrency"] = freeCurrencyLabel

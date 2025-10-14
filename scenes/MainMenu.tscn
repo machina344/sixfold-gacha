@@ -11,15 +11,16 @@ anchors_preset = 0
 script = ExtResource("1_g265n")
 
 [node name="MainMenu" type="Sprite2D" parent="."]
-position = Vector2(361, 540)
+position = Vector2(361, 721)
+scale = Vector2(1, 1.33519)
 texture = ExtResource("1_dqnpd")
 
 [node name="MainMenuButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 25.0
-offset_top = 933.0
-offset_right = 223.0
-offset_bottom = 1070.0
+offset_left = 23.0
+offset_top = 1286.0
+offset_right = 221.0
+offset_bottom = 1423.0
 theme = ExtResource("2_m1fgp")
 disabled = true
 text = "Menu
@@ -27,19 +28,19 @@ text = "Menu
 
 [node name="SummonButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 231.0
-offset_top = 916.0
-offset_right = 512.0
-offset_bottom = 1074.0
+offset_left = 229.0
+offset_top = 1269.0
+offset_right = 510.0
+offset_bottom = 1427.0
 theme = ExtResource("2_m1fgp")
 text = "Summon"
 
 [node name="CListButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 513.0
-offset_top = 925.0
-offset_right = 708.0
-offset_bottom = 1077.0
+offset_left = 511.0
+offset_top = 1278.0
+offset_right = 706.0
+offset_bottom = 1430.0
 theme = ExtResource("2_m1fgp")
 text = "Character List
 "
@@ -47,15 +48,15 @@ text = "Character List
 [node name="PlayButton" type="Button" parent="."]
 layout_mode = 0
 offset_left = 4.0
-offset_top = 640.0
+offset_top = 905.0
 offset_right = 715.0
-offset_bottom = 901.0
+offset_bottom = 1166.0
 theme = ExtResource("2_m1fgp")
 text = "PLAY
 "
 
 [node name="MenuRank" type="Sprite2D" parent="."]
-position = Vector2(352, 86.5)
+position = Vector2(355, 105)
 scale = Vector2(2.45333, 1.93)
 texture = ExtResource("4_gh3wq")
 

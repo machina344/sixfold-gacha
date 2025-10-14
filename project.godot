@@ -24,7 +24,8 @@ PlayerDataContainer="*res://resources/playerDataContainer.gd"
 [display]
 
 window/size/viewport_width=720
-window/size/viewport_height=1080
+window/size/viewport_height=1440
+window/size/initial_position_type=2
 
 [gui]
 

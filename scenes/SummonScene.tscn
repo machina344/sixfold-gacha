@@ -60,91 +60,93 @@ anchors_preset = 0
 script = ExtResource("1_yxd1t")
 
 [node name="SummonScreen" type="Sprite2D" parent="."]
-position = Vector2(359, 541)
+position = Vector2(359, 720)
+scale = Vector2(1, 1.33148)
 texture = ExtResource("2_ra40d")
 
 [node name="SingleSummon" type="Button" parent="."]
 layout_mode = 0
-offset_left = 70.0
-offset_top = 715.0
-offset_right = 326.0
-offset_bottom = 873.0
+offset_left = 48.0
+offset_top = 975.0
+offset_right = 304.0
+offset_bottom = 1133.0
 theme = ExtResource("1_dhpfl")
 text = "Single-Summon
 "
 
 [node name="MultiSummon" type="Button" parent="."]
 layout_mode = 0
-offset_left = 379.0
-offset_top = 715.0
-offset_right = 650.0
-offset_bottom = 874.0
+offset_left = 390.0
+offset_top = 977.0
+offset_right = 661.0
+offset_bottom = 1136.0
 theme = ExtResource("1_dhpfl")
 text = "Multi-Summon
 "
 
+[node name="SummonIcons" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(365, 605)
+sprite_frames = SubResource("SpriteFrames_ooebg")
+animation = &"Units"
+speed_scale = 0.0
+
 [node name="COverlay" type="Sprite2D" parent="."]
 visible = false
-position = Vector2(359, 542)
+position = Vector2(365, 691)
 texture = ExtResource("4_g2wec")
 
 [node name="ROverlay" type="Sprite2D" parent="."]
 visible = false
-position = Vector2(359, 541)
+position = Vector2(364, 690)
 texture = ExtResource("5_qco1a")
 
 [node name="SrOverlay" type="Sprite2D" parent="."]
 visible = false
-position = Vector2(359, 541)
+position = Vector2(365, 689)
 texture = ExtResource("6_tarvw")
 
 [node name="UrOverlay" type="Sprite2D" parent="."]
 visible = false
-position = Vector2(361, 541)
+position = Vector2(366, 690)
 texture = ExtResource("8_ed6ho")
 
 [node name="DisabledSummonButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 223.0
-offset_top = 912.0
-offset_right = 507.0
-offset_bottom = 1077.0
+offset_left = 220.0
+offset_top = 1253.0
+offset_right = 504.0
+offset_bottom = 1418.0
 theme = ExtResource("1_dhpfl")
 disabled = true
 text = "Summon"
 
 [node name="MenuButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 23.0
-offset_top = 931.0
-offset_right = 216.0
-offset_bottom = 1074.0
+offset_left = 20.0
+offset_top = 1269.0
+offset_right = 213.0
+offset_bottom = 1412.0
 theme = ExtResource("1_dhpfl")
 text = "Menu
 "
 
 [node name="CListButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 513.0
-offset_top = 925.0
-offset_right = 708.0
-offset_bottom = 1077.0
+offset_left = 510.0
+offset_top = 1268.0
+offset_right = 705.0
+offset_bottom = 1420.0
 theme = ExtResource("1_dhpfl")
 text = "Character List
 "
 
 [node name="MenuRank" type="Sprite2D" parent="."]
-position = Vector2(351.5, 86.5)
+position = Vector2(350, 110)
 scale = Vector2(2.45667, 1.93)
 texture = ExtResource("9_rtcew")
 
-[node name="SummonIcons" type="AnimatedSprite2D" parent="."]
-visible = false
-position = Vector2(367, 459)
-sprite_frames = SubResource("SpriteFrames_ooebg")
-animation = &"Units"
-speed_scale = 0.0
-
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
 [connection signal="pressed" from="SingleSummon" to="." method="_on_single_summon_pressed"]
 [connection signal="pressed" from="MultiSummon" to="." method="_on_multi_summon_pressed"]
 [connection signal="pressed" from="MenuButton" to="." method="_on_menu_button_pressed"]

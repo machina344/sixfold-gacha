@@ -16,8 +16,8 @@ var rng = RandomNumberGenerator.new()
 
 var rarities = {Rarity.Rarity.COMMON : 35,
 				Rarity.Rarity.RARE: 45,
-				Rarity.Rarity.SUPER_RARE: 16,
-				Rarity.Rarity.ULTRA_RARE: 4}
+				Rarity.Rarity.SUPER_RARE: 19,
+				Rarity.Rarity.ULTRA_RARE: 1}
 
 func registerNew(character_Rarity, name, level, health, attack, defense, element, DMReduct, Dodge, DMBoost, Crit, AddChance):
 	count+=1

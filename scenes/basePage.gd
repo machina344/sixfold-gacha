@@ -18,3 +18,4 @@ func _notification(what):
 		await get_tree().create_timer(time_in_seconds).timeout
 		 # After custom actions, you can manually quit:
 		get_tree().quit()
+	
