@@ -17,7 +17,7 @@ func _on_summon_button_pressed():
 
 
 func _on_c_list_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/CharacterList.tscn") # Replace with function body.
+	get_tree().change_scene_to_file("res://scenes/character_menu.tscn") # Replace with function body.
 
 
 func _on_play_button_pressed() -> void:

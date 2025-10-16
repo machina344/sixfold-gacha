@@ -60,4 +60,4 @@ func _on_menu_button_pressed():
 	get_tree().change_scene_to_file("res://scenes/MainMenu.tscn")
 	
 func _on_c_list_button_pressed():
-	get_tree().change_scene_to_file("res://scenes/CharacterList.tscn")
+	get_tree().change_scene_to_file("res://scenes/Character_menu.tscn")

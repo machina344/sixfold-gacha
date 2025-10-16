@@ -166,6 +166,15 @@ offset_bottom = 150.0
 mouse_filter = 1
 color = Color(1, 1, 1, 0)
 
+[node name="levelLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 101.0
+offset_top = 96.0
+offset_right = 152.0
+offset_bottom = 113.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Lvl: "
+
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
 [connection signal="mouse_exited" from="UsagePanel" to="." method="_on_usage_panel_mouse_exited"]
 [connection signal="pressed" from="UsagePanel/SellButton" to="." method="_on_sell_button_pressed"]

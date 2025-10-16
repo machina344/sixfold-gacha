@@ -7,10 +7,15 @@ class_name unitTemplate
 @export var name = ''
 
 @export var level = 1
+@export var exp = 1
 
 @export var health = 0
 @export var attack = 0
 @export var defense = 0
+
+@export var healthGrowth = 0
+@export var attackGrowth = 0
+@export var defenseGrowth = 0
 
 @export var element = ''
 
@@ -20,14 +25,18 @@ class_name unitTemplate
 @export var Crit = 0
 @export var AddChance = 0
 	
-func _init(character_ID, character_Rarity, name, level, health, attack, defense, element, DMReduct, Dodge, DMBoost, Crit, AddChance):
+func _init(character_ID, character_Rarity, name, level, exp, health, attack, defense, healthGrowth, attackGrowth, defenseGrowth, element, DMReduct, Dodge, DMBoost, Crit, AddChance):
 	self.characterID = character_ID
 	self.characterRarity = character_Rarity
 	self.name = name
 	self.level = level
+	self.exp = exp
 	self.health = health
 	self.attack = attack
 	self.defense = defense
+	self.healthGrowth = healthGrowth
+	self.attackGrowth = attackGrowth
+	self.defenseGrowth = defenseGrowth
 	self.element = element
 	self.DMReduct = DMReduct
 	self.Dodge = Dodge

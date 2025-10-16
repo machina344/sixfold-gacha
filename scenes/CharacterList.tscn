@@ -15,7 +15,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_1yo2r")
 
-[node name="MenuButton" type="Button" parent="."]
+[node name="BackButton" type="Button" parent="."]
 top_level = true
 layout_mode = 1
 anchors_preset = 15
@@ -29,7 +29,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
 theme = ExtResource("1_la5e8")
-text = "Menu"
+text = "Back"
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
 clip_contents = false
@@ -45,7 +45,7 @@ offset_right = 721.0
 offset_bottom = 913.0
 
 [node name="GridContainer" type="GridContainer" parent="ScrollContainer"]
-custom_minimum_size = Vector2(700, 1400)
+custom_minimum_size = Vector2(700, 1250)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 2
@@ -60,4 +60,4 @@ offset_top = 1272.0
 offset_right = 1138.0
 offset_bottom = 1439.0
 
-[connection signal="pressed" from="MenuButton" to="." method="_on_menu_button_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_menu_button_pressed"]

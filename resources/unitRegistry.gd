@@ -2,15 +2,15 @@ extends Node
 
 var count = -1
 var unitDict = {}
-var commonHogs = registerNew(Rarity.Rarity.COMMON, '30-50 Feral Hogs', 1, 1, 1, 1, 'Fire', 0, 0, 0, 0, 0)
-var rareDogs = registerNew(Rarity.Rarity.RARE, 'Guy', 1, 1, 1, 1, 'Fire', 0, 0, 0, 0, 0)
-var rareLogs = registerNew(Rarity.Rarity.RARE, 'Bad Guy', 1, 1, 1, 1, 'Fire', 0, 0, 0, 0, 0)
-var commonMogs = registerNew(Rarity.Rarity.SUPER_RARE, 'Uchiha Akira', 1, 1, 1, 1, 'Fire', 0, 0, 0, 0, 0)
-var commonBogs = registerNew(Rarity.Rarity.SUPER_RARE, 'Uchiha Itami', 1, 1, 1, 1, 'Fire', 0, 0, 0, 0, 0)
-var commonQoahogs = registerNew(Rarity.Rarity.SUPER_RARE, 'Senju Tarashi', 1, 1, 1, 1, 'Fire', 0, 0, 0, 0, 0)
-var commonPoDogs = registerNew(Rarity.Rarity.ULTRA_RARE, 'Uchiha Setsuna', 1, 1, 1, 1, 'Fire', 0, 0, 0, 0, 0)
-var uncommonBeaver = registerNew(Rarity.Rarity.ULTRA_RARE, 'Hyuga Heika', 1, 1, 1, 1, 'Fire', 0, 0, 0, 0, 0)
-var uncommonLeaver = registerNew(Rarity.Rarity.ULTRA_RARE, 'Hotdog', 1, 1, 1, 1, 'Fire', 0, 0, 0, 0, 0)
+var commonHogs = registerNew(Rarity.Rarity.COMMON, '30-50 Feral Hogs', 1, 1, 1, 1, 1, 8, 8, 8, 'Earth', 0, 0, 0, 0, 0)
+var rareGuy = registerNew(Rarity.Rarity.RARE, 'Guy', 1, 1, 1, 1, 1, 8, 8, 8, 'Wind', 0, 0, 0, 0, 0)
+var rareBadGuy = registerNew(Rarity.Rarity.RARE, 'Bad Guy', 1, 1, 1, 1, 1, 8, 8, 8, 'Fire', 0, 0, 0, 0, 0)
+var superRareUchihaAkira = registerNew(Rarity.Rarity.SUPER_RARE, 'Uchiha Akira', 1, 1, 1, 1, 1, 8, 8, 8, 'Fire', 0, 0, 0, 0, 0)
+var superRareUchihaItami = registerNew(Rarity.Rarity.SUPER_RARE, 'Uchiha Itami', 1, 1, 1, 1, 1, 8, 8, 8, 'Lightning', 0, 0, 0, 0, 0)
+var superRareSenjuTarashi = registerNew(Rarity.Rarity.SUPER_RARE, 'Senju Tarashi', 1, 1, 1, 1, 1, 8, 8, 8, 'Earth', 0, 0, 0, 0, 0)
+var ultraRareUchihaSetsuna = registerNew(Rarity.Rarity.ULTRA_RARE, 'Uchiha Setsuna', 1, 1, 1, 1, 1, 8, 8, 8, 'Fire', 0, 0, 0, 0, 0)
+var ultraRareHyugaHeika = registerNew(Rarity.Rarity.ULTRA_RARE, 'Hyuga Heika', 1, 1, 1, 1, 1, 8, 8, 8, 'Earth', 0, 0, 0, 0, 0)
+var ultraRareHotdog = registerNew(Rarity.Rarity.ULTRA_RARE, 'Hotdog', 1, 1, 1, 1, 1, 8, 8, 8, 'Water', 0, 0, 0, 0, 0)
 
 var rng = RandomNumberGenerator.new()
 
@@ -19,9 +19,9 @@ var rarities = {Rarity.Rarity.COMMON : 35,
 				Rarity.Rarity.SUPER_RARE: 19,
 				Rarity.Rarity.ULTRA_RARE: 1}
 
-func registerNew(character_Rarity, name, level, health, attack, defense, element, DMReduct, Dodge, DMBoost, Crit, AddChance):
+func registerNew(character_Rarity, name, level, exp, health, attack, defense, healthGrowth, attackGrowth, defenseGrowth, element, DMReduct, Dodge, DMBoost, Crit, AddChance):
 	count+=1
-	return register(unitTemplate.new(count, character_Rarity, name, level, health, attack, defense, element, DMReduct, Dodge, DMBoost, Crit, AddChance))
+	return register(unitTemplate.new(count, character_Rarity, name, level, exp, health, attack, defense, healthGrowth, attackGrowth, defenseGrowth, element, DMReduct, Dodge, DMBoost, Crit, AddChance))
 
 func register(template : unitTemplate):
 	unitDict[template.characterID] = template

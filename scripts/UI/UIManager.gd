@@ -21,9 +21,17 @@ func create_elements():
 	add_child(freeCurrencyLabel)
 	PlayerElements["freeCurrency"] = freeCurrencyLabel
 	
+	var playerLevelLabel = Label.new()
+	playerLevelLabel.text = str(PlayerDataContainer.playerData.playerLevel)
+	playerLevelLabel.set_position(Vector2(100, 100))
+	playerLevelLabel.set("theme_override_colors/font_color", Color(0, 0, 0, 1))
+	add_child(playerLevelLabel)
+	PlayerElements["playerLevelLabel"] = playerLevelLabel
+	
 	
 	
 
 func _process(delta) -> void:
+	PlayerElements["playerLevelLabel"].text = str(PlayerDataContainer.playerData.playerLevel)
 	PlayerElements["premiumCurrency"].text = str(PlayerDataContainer.playerData.premiumCurrency)
 	PlayerElements["freeCurrency"].text = str(PlayerDataContainer.playerData.coinCurrency)

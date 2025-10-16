@@ -1,0 +1,127 @@
+[gd_scene load_steps=13 format=3 uid="uid://blpwj10wmj2ui"]
+
+[ext_resource type="Script" path="res://scenes/character_information.gd" id="1_oppip"]
+[ext_resource type="Texture2D" uid="uid://x6vrdemky7j7" path="res://assets/character_images/FeralHogs.png" id="2_lssi4"]
+[ext_resource type="Texture2D" uid="uid://ea264ullhfo5" path="res://assets/character_images/Guy.png" id="3_1h6jk"]
+[ext_resource type="Texture2D" uid="uid://bi23461yfd5oc" path="res://assets/character_images/BadGuy.png" id="4_msjob"]
+[ext_resource type="Texture2D" uid="uid://owga2c3fmglu" path="res://assets/character_images/UchihaAkira.png" id="5_j64g8"]
+[ext_resource type="Texture2D" uid="uid://dp3k2fhxf3r0d" path="res://assets/character_images/UchihaItami.png" id="6_len1g"]
+[ext_resource type="Texture2D" uid="uid://dyiii4y35dcer" path="res://assets/character_images/SenjuTarashi.png" id="7_jyoqm"]
+[ext_resource type="Texture2D" uid="uid://covqhp67oxm8c" path="res://assets/character_images/UchihaSetsuna.png" id="8_gvmlf"]
+[ext_resource type="Texture2D" uid="uid://cskwhqgeixman" path="res://assets/character_images/HyugaHeika.png" id="9_ett8b"]
+[ext_resource type="Texture2D" uid="uid://crn250p63axhw" path="res://assets/character_images/Hotdog.png" id="10_gnem1"]
+[ext_resource type="Theme" uid="uid://c1vds42xiuak4" path="res://assets/interactables/buttons.tres" id="11_gr8jb"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mqurh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_lssi4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_1h6jk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_msjob")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_j64g8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_len1g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_jyoqm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_gvmlf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ett8b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_gnem1")
+}],
+"loop": true,
+"name": &"Units",
+"speed": 5.0
+}]
+
+[node name="CharacterInformation" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_oppip")
+
+[node name="InnerBorder" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 138.0
+offset_top = 180.0
+offset_right = -194.0
+offset_bottom = -897.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="UnitIcon" type="AnimatedSprite2D" parent="InnerBorder"]
+position = Vector2(220, 347)
+scale = Vector2(1.8, 1.8)
+sprite_frames = SubResource("SpriteFrames_mqurh")
+animation = &"Units"
+speed_scale = 0.0
+
+[node name="levelLabel" type="Label" parent="InnerBorder"]
+offset_left = 33.0
+offset_top = -83.0
+offset_right = 371.0
+offset_bottom = 84.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "Lvl: "
+
+[node name="ATKLabel" type="Label" parent="InnerBorder"]
+layout_mode = 0
+offset_left = -130.0
+offset_top = 824.0
+offset_right = 206.0
+offset_bottom = 886.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "ATK: "
+
+[node name="DEFLabel" type="Label" parent="InnerBorder"]
+layout_mode = 0
+offset_left = -128.0
+offset_top = 893.0
+offset_right = 494.0
+offset_bottom = 1039.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "DEF:"
+
+[node name="HealthLabel" type="Label" parent="InnerBorder"]
+layout_mode = 0
+offset_left = -135.0
+offset_top = 752.0
+offset_right = 277.0
+offset_bottom = 842.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "Health:"
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 1308.0
+offset_right = 300.0
+offset_bottom = 1423.0
+theme = ExtResource("11_gr8jb")
+text = "Return to List"
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

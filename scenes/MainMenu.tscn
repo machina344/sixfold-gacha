@@ -42,7 +42,7 @@ offset_top = 1278.0
 offset_right = 706.0
 offset_bottom = 1430.0
 theme = ExtResource("2_m1fgp")
-text = "Character List
+text = "Character Menu
 "
 
 [node name="PlayButton" type="Button" parent="."]

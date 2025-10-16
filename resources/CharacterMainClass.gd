@@ -5,11 +5,16 @@ class_name CharacterMainClass
 
 var charTemplate
 
-@export var level = 0 : set = _set_level
+@export var level = 1
+@export var exp = 0 : set = _set_exp
 
-@export var health = 0 : set = _set_health
-@export var attack = 0 : set = _set_attack
-@export var defense = 0 : set = _set_defense
+@export var health = 0 : set = _set_exp
+@export var attack = 0 : set = _set_exp
+@export var defense = 0 : set = _set_exp
+
+@export var healthGrowth = 0
+@export var attackGrowth = 0
+@export var defenseGrowth = 0
 
 @export var DMReduct = 0
 @export var Dodge = 0
@@ -25,17 +30,16 @@ func _setTemplate(template : unitTemplate):
 func doAfterLoad():
 	charTemplate = UnitRegistry.getTemplate(charID)
 
-func _set_level(new_value : int):
-	level = new_value
-
-func _set_health(new_value : int):
-	health = new_value
-	
-func _set_attack(new_value : int):
-	attack = new_value
-
-func _set_defense(new_value : int):
-	defense = new_value
+func _set_exp(new_value : int):
+	if level < 100:
+		exp = exp + new_value
+		level = round(pow(exp, 0.33333333))
+		
+		health = health + (healthGrowth * level)
+		attack = attack + (attackGrowth * level)
+		defense = defense + (defenseGrowth * level)
+	else:
+		pass
 
 func take_damage(amount : int):
 	if (amount - defense) > 0:

@@ -1,6 +1,6 @@
 extends Resource
 
-@export var playerLevel = 0
+@export var playerLevel = 1
 @export var playerEXP = 0
 
 @export var coinCurrency = 0
@@ -15,6 +15,10 @@ func add_character_to_box(characterTemplate : unitTemplate):
 	characterInstance._setTemplate(characterTemplate)
 	characterBox.append(characterInstance)
 	
+func addPlayerEXP(addedEXP):
+	playerEXP += addedEXP
+	playerLevel = round(pow(playerEXP, 0.285714285714))
+
 	
 func doAfterLoad():
 	for i in characterBox:

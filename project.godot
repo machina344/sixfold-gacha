@@ -20,12 +20,14 @@ config/icon="res://icon.svg"
 UnitRegistry="*res://resources/unitRegistry.gd"
 Rarity="*res://resources/rarity.gd"
 PlayerDataContainer="*res://resources/playerDataContainer.gd"
+UnitInteraction="*res://resources/unitInteraction.gd"
 
 [display]
 
 window/size/viewport_width=720
 window/size/viewport_height=1440
 window/size/initial_position_type=2
+window/size/initial_position=Vector2i(100, 0)
 
 [gui]
 

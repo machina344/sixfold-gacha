@@ -25,4 +25,5 @@ func clear_grid_container():
 		child.queue_free()
 	
 func _on_menu_button_pressed():
-	get_tree().change_scene_to_file("res://scenes/MainMenu.tscn")
+	get_tree().change_scene_to_file("res://scenes/character_menu.tscn")
+	

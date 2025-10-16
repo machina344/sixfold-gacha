@@ -1,0 +1,60 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvwpkqslgpae7"]
+
+[ext_resource type="Script" path="res://scenes/character_menu.gd" id="1_6vlnr"]
+[ext_resource type="Theme" uid="uid://c1vds42xiuak4" path="res://assets/interactables/buttons.tres" id="2_1oytn"]
+
+[node name="CharacterMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_6vlnr")
+
+[node name="characterListButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 69.0
+offset_right = 282.0
+offset_bottom = 166.0
+theme = ExtResource("2_1oytn")
+text = "Character List"
+
+[node name="mainMenuButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 1303.0
+offset_right = 402.0
+offset_bottom = 1403.0
+theme = ExtResource("2_1oytn")
+text = "Main Menu"
+
+[node name="trainingButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 387.0
+offset_top = 74.0
+offset_right = 656.0
+offset_bottom = 164.0
+theme = ExtResource("2_1oytn")
+text = "Training"
+
+[node name="awakeningButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 256.0
+offset_right = 317.0
+offset_bottom = 378.0
+theme = ExtResource("2_1oytn")
+text = "Awaken"
+
+[node name="sellUnitsButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 381.0
+offset_top = 261.0
+offset_right = 653.0
+offset_bottom = 378.0
+theme = ExtResource("2_1oytn")
+text = "Sell Units"
+
+[connection signal="pressed" from="characterListButton" to="." method="_on_character_list_button_pressed"]
+[connection signal="pressed" from="mainMenuButton" to="." method="_on_main_menu_button_pressed"]
+[connection signal="pressed" from="trainingButton" to="." method="_on_training_button_pressed"]
+[connection signal="pressed" from="awakeningButton" to="." method="_on_awakening_button_pressed"]
+[connection signal="pressed" from="sellUnitsButton" to="." method="_on_sell_units_button_pressed"]

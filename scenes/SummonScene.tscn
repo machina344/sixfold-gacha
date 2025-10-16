@@ -131,14 +131,14 @@ theme = ExtResource("1_dhpfl")
 text = "Menu
 "
 
-[node name="CListButton" type="Button" parent="."]
+[node name="characterMenuButton" type="Button" parent="."]
 layout_mode = 0
 offset_left = 510.0
 offset_top = 1268.0
 offset_right = 705.0
 offset_bottom = 1420.0
 theme = ExtResource("1_dhpfl")
-text = "Character List
+text = "Character Menu
 "
 
 [node name="MenuRank" type="Sprite2D" parent="."]
@@ -150,4 +150,4 @@ texture = ExtResource("9_rtcew")
 [connection signal="pressed" from="SingleSummon" to="." method="_on_single_summon_pressed"]
 [connection signal="pressed" from="MultiSummon" to="." method="_on_multi_summon_pressed"]
 [connection signal="pressed" from="MenuButton" to="." method="_on_menu_button_pressed"]
-[connection signal="pressed" from="CListButton" to="." method="_on_c_list_button_pressed"]
+[connection signal="pressed" from="characterMenuButton" to="." method="_on_c_list_button_pressed"]
