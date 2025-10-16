@@ -5,6 +5,7 @@ extends BasePage
 
 func _ready():
 	PlayerDataContainer.playerData.characterAdded.connect(_on_inventory_updated)
+	PlayerDataContainer.playerData.characterRemoved.connect(_on_inventory_updated)
 	_on_inventory_updated()
 	
 func _on_inventory_updated():

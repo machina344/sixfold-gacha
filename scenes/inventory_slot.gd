@@ -34,3 +34,14 @@ func _on_color_rect_gui_input(event: InputEvent):
 				print("Awakening ", PlayerDataContainer.playerData.characterBox[unit].charTemplate.name)
 			elif UnitInteraction.unitInteractionType == 3:
 				print("Selling ", PlayerDataContainer.playerData.characterBox[unit].charTemplate.name)
+				if PlayerDataContainer.playerData.characterBox[unit].charTemplate.characterRarity == Rarity.Rarity.COMMON:
+					PlayerDataContainer.playerData.coinCurrency += (1000 + (100 * PlayerDataContainer.playerData.characterBox[unit].level))
+				elif PlayerDataContainer.playerData.characterBox[unit].charTemplate.characterRarity == Rarity.Rarity.RARE:
+					PlayerDataContainer.playerData.coinCurrency += (2000 + (100 * PlayerDataContainer.playerData.characterBox[unit].level))
+				elif PlayerDataContainer.playerData.characterBox[unit].charTemplate.characterRarity == Rarity.Rarity.SUPER_RARE:
+					PlayerDataContainer.playerData.coinCurrency += (4500 + (100 * PlayerDataContainer.playerData.characterBox[unit].level))
+				elif PlayerDataContainer.playerData.characterBox[unit].charTemplate.characterRarity == Rarity.Rarity.ULTRA_RARE:
+					PlayerDataContainer.playerData.coinCurrency += (15000 + (100 * PlayerDataContainer.playerData.characterBox[unit].level))
+				PlayerDataContainer.playerData.remove_character_from_box(unit)
+				
+					

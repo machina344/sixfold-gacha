@@ -8,12 +8,17 @@ extends Resource
 @export var characterBox: Array[CharacterMainClass] = []
 
 signal characterAdded
+signal characterRemoved
 
 func add_character_to_box(characterTemplate : unitTemplate):
-	characterAdded.emit
+	characterAdded.emit()
 	var characterInstance = CharacterMainClass.new()
 	characterInstance._setTemplate(characterTemplate)
 	characterBox.append(characterInstance)
+
+func remove_character_from_box(characterIndex):
+	characterBox.remove_at(characterIndex)
+	characterRemoved.emit()
 	
 func addPlayerEXP(addedEXP):
 	playerEXP += addedEXP

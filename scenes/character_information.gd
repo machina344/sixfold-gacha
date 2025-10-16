@@ -12,10 +12,9 @@ func _ready() -> void:
 	currentUnit = UnitInteraction.interactedIndex
 	unit_icon.set_frame(PlayerDataContainer.playerData.characterBox[currentUnit].charID)
 	level_label.text = "Level: " + str(PlayerDataContainer.playerData.characterBox[currentUnit].level)
-	atk_label.text = "Attack: " + str(PlayerDataContainer.playerData.characterBox[currentUnit].attack)
-	def_label.text = "Defense: " + str(PlayerDataContainer.playerData.characterBox[currentUnit].defense)
-	health_label.text = "Health: " + str(PlayerDataContainer.playerData.characterBox[currentUnit].health)
-	print(PlayerDataContainer.playerData.characterBox[currentUnit].attack, PlayerDataContainer.playerData.characterBox[currentUnit].defense, PlayerDataContainer.playerData.characterBox[currentUnit].health)
+	atk_label.text = "Attack: " + str(PlayerDataContainer.playerData.characterBox[currentUnit]._get_attack())
+	def_label.text = "Defense: " + str(PlayerDataContainer.playerData.characterBox[currentUnit]._get_defense())
+	health_label.text = "Health: " + str(PlayerDataContainer.playerData.characterBox[currentUnit]._get_health())
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
