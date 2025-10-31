@@ -8,6 +8,7 @@ class_name unitTemplate
 
 @export var level = 1
 @export var exp = 1
+@export var stage = 0
 
 @export var health = 0
 @export var attack = 0
@@ -24,13 +25,18 @@ class_name unitTemplate
 @export var DMBoost = 0
 @export var Crit = 0
 @export var AddChance = 0
+
+@export var isSummonable = true
+
+@export var awakensInto = null
 	
-func _init(character_ID, character_Rarity, name, level, exp, health, attack, defense, healthGrowth, attackGrowth, defenseGrowth, element, DMReduct, Dodge, DMBoost, Crit, AddChance):
+func _init(character_ID, character_Rarity, name, level, exp, stage, health, attack, defense, healthGrowth, attackGrowth, defenseGrowth, element, DMReduct, Dodge, DMBoost, Crit, AddChance, isSummonable, awakensInto):
 	self.characterID = character_ID
 	self.characterRarity = character_Rarity
 	self.name = name
 	self.level = level
 	self.exp = exp
+	self.stage = stage
 	self.health = health
 	self.attack = attack
 	self.defense = defense
@@ -43,3 +49,5 @@ func _init(character_ID, character_Rarity, name, level, exp, health, attack, def
 	self.DMBoost = DMBoost
 	self.Crit = Crit
 	self.AddChance = AddChance
+	self.isSummonable = isSummonable
+	self.awakensInto = awakensInto

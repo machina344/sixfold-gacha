@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://2s0mdqlvg7up"]
+[gd_scene load_steps=15 format=3 uid="uid://2s0mdqlvg7up"]
 
 [ext_resource type="Script" path="res://scenes/training_scene.gd" id="1_1wmut"]
 [ext_resource type="Theme" uid="uid://c1vds42xiuak4" path="res://assets/interactables/buttons.tres" id="2_hmxqr"]
@@ -11,6 +11,8 @@
 [ext_resource type="Texture2D" uid="uid://covqhp67oxm8c" path="res://assets/character_images/UchihaSetsuna.png" id="9_d8rjl"]
 [ext_resource type="Texture2D" uid="uid://cskwhqgeixman" path="res://assets/character_images/HyugaHeika.png" id="10_1sp8r"]
 [ext_resource type="Texture2D" uid="uid://crn250p63axhw" path="res://assets/character_images/Hotdog.png" id="11_kwugi"]
+[ext_resource type="Texture2D" uid="uid://cvw1cly24ax64" path="res://assets/character_images/FeralerHogs.png" id="12_ho602"]
+[ext_resource type="Texture2D" uid="uid://btwgi4drenq7r" path="res://assets/character_images/SuperGuy.png" id="13_vt8hm"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_aj3b0"]
 animations = [{
@@ -41,6 +43,12 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("11_kwugi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ho602")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vt8hm")
 }],
 "loop": true,
 "name": &"Units",
@@ -112,6 +120,16 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 60
 text = "Lvl: "
 
+[node name="Experience3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 179.0
+offset_top = 786.0
+offset_right = 495.0
+offset_bottom = 913.0
+theme = ExtResource("2_hmxqr")
+text = "Give 1000000 EXP"
+
 [connection signal="pressed" from="Experience1" to="." method="_on_experience_1_pressed"]
 [connection signal="pressed" from="Experience2" to="." method="_on_experience_2_pressed"]
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="Experience3" to="." method="_on_experience_3_pressed"]

@@ -1,0 +1,125 @@
+[gd_scene load_steps=15 format=3 uid="uid://m8oofd23lu2l"]
+
+[ext_resource type="Script" path="res://scenes/awakening_scene.gd" id="1_i7evm"]
+[ext_resource type="Texture2D" uid="uid://x6vrdemky7j7" path="res://assets/character_images/FeralHogs.png" id="2_2lxab"]
+[ext_resource type="Texture2D" uid="uid://ea264ullhfo5" path="res://assets/character_images/Guy.png" id="3_j1ny7"]
+[ext_resource type="Texture2D" uid="uid://bi23461yfd5oc" path="res://assets/character_images/BadGuy.png" id="4_1alcy"]
+[ext_resource type="Texture2D" uid="uid://owga2c3fmglu" path="res://assets/character_images/UchihaAkira.png" id="5_rlfcs"]
+[ext_resource type="Texture2D" uid="uid://dp3k2fhxf3r0d" path="res://assets/character_images/UchihaItami.png" id="6_6yds6"]
+[ext_resource type="Texture2D" uid="uid://dyiii4y35dcer" path="res://assets/character_images/SenjuTarashi.png" id="7_p1sll"]
+[ext_resource type="Texture2D" uid="uid://covqhp67oxm8c" path="res://assets/character_images/UchihaSetsuna.png" id="8_2ftog"]
+[ext_resource type="Texture2D" uid="uid://cskwhqgeixman" path="res://assets/character_images/HyugaHeika.png" id="9_8vh88"]
+[ext_resource type="Texture2D" uid="uid://crn250p63axhw" path="res://assets/character_images/Hotdog.png" id="10_use8o"]
+[ext_resource type="Texture2D" uid="uid://cvw1cly24ax64" path="res://assets/character_images/FeralerHogs.png" id="11_l0pse"]
+[ext_resource type="Theme" uid="uid://c1vds42xiuak4" path="res://assets/interactables/buttons.tres" id="11_u5s75"]
+[ext_resource type="Texture2D" uid="uid://btwgi4drenq7r" path="res://assets/character_images/SuperGuy.png" id="12_nddgk"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hmpu6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_2lxab")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_j1ny7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_1alcy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_rlfcs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_6yds6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_p1sll")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_2ftog")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_8vh88")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_use8o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_l0pse")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_nddgk")
+}],
+"loop": true,
+"name": &"Units",
+"speed": 5.0
+}]
+
+[node name="AwakeningScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_i7evm")
+
+[node name="InnerBorder" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 138.0
+offset_top = 180.0
+offset_right = -194.0
+offset_bottom = -897.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="UnitIcon" type="AnimatedSprite2D" parent="InnerBorder"]
+position = Vector2(193, 179)
+sprite_frames = SubResource("SpriteFrames_hmpu6")
+animation = &"Units"
+speed_scale = 0.0
+
+[node name="levelLabel" type="Label" parent="InnerBorder"]
+layout_mode = 0
+offset_left = 33.0
+offset_top = -83.0
+offset_right = 371.0
+offset_bottom = 84.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "Lvl: "
+
+[node name="awakeningLabel" type="Label" parent="InnerBorder"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 384.0
+offset_right = 361.0
+offset_bottom = 455.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Awakening: "
+
+[node name="awakeningButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 771.0
+offset_right = 504.0
+offset_bottom = 903.0
+theme = ExtResource("11_u5s75")
+text = "Awaken Character"
+
+[node name="backButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 198.0
+offset_top = 1067.0
+offset_right = 470.0
+offset_bottom = 1188.0
+theme = ExtResource("11_u5s75")
+text = "Back to Character Menu"
+
+[connection signal="pressed" from="awakeningButton" to="." method="_on_awakening_button_pressed"]
+[connection signal="pressed" from="backButton" to="." method="_on_back_button_pressed"]

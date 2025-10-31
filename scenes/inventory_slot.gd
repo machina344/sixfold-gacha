@@ -31,6 +31,8 @@ func _on_color_rect_gui_input(event: InputEvent):
 				get_tree().change_scene_to_file("res://scenes/TrainingScene.tscn")
 				print("Training ", PlayerDataContainer.playerData.characterBox[unit].charTemplate.name)
 			elif UnitInteraction.unitInteractionType == 2:
+				UnitInteraction.interactedIndex = unit
+				get_tree().change_scene_to_file("res://scenes/awakeningScene.tscn")
 				print("Awakening ", PlayerDataContainer.playerData.characterBox[unit].charTemplate.name)
 			elif UnitInteraction.unitInteractionType == 3:
 				print("Selling ", PlayerDataContainer.playerData.characterBox[unit].charTemplate.name)

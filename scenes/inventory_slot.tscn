@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://bat8rpjxdmavc"]
+[gd_scene load_steps=19 format=3 uid="uid://bat8rpjxdmavc"]
 
 [ext_resource type="Script" path="res://scenes/inventory_slot.gd" id="1_b3sf3"]
 [ext_resource type="Texture2D" uid="uid://x6vrdemky7j7" path="res://assets/character_images/FeralHogs.png" id="2_b5b6c"]
@@ -10,7 +10,9 @@
 [ext_resource type="Texture2D" uid="uid://covqhp67oxm8c" path="res://assets/character_images/UchihaSetsuna.png" id="8_x0425"]
 [ext_resource type="Texture2D" uid="uid://cskwhqgeixman" path="res://assets/character_images/HyugaHeika.png" id="9_kihri"]
 [ext_resource type="Texture2D" uid="uid://crn250p63axhw" path="res://assets/character_images/Hotdog.png" id="10_gy5ga"]
+[ext_resource type="Texture2D" uid="uid://cvw1cly24ax64" path="res://assets/character_images/FeralerHogs.png" id="11_kpu0a"]
 [ext_resource type="Texture2D" uid="uid://x0ukntab74md" path="res://assets/overlays/COverlay.png" id="11_rviv3"]
+[ext_resource type="Texture2D" uid="uid://btwgi4drenq7r" path="res://assets/character_images/SuperGuy.png" id="12_kaubh"]
 [ext_resource type="Texture2D" uid="uid://c7la8pcnk1mia" path="res://assets/overlays/ROverlay.png" id="12_py3a5"]
 [ext_resource type="Texture2D" uid="uid://csw1d5dpb21pi" path="res://assets/overlays/SROverlay.png" id="13_pxexu"]
 [ext_resource type="Texture2D" uid="uid://bgh26kdjmuwug" path="res://assets/overlays/UROverlay.png" id="14_38ak3"]
@@ -44,6 +46,12 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("10_gy5ga")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_kpu0a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_kaubh")
 }],
 "loop": true,
 "name": &"Units",
