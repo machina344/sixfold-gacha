@@ -45,5 +45,3 @@ func _on_color_rect_gui_input(event: InputEvent):
 				elif PlayerDataContainer.playerData.characterBox[unit].charTemplate.characterRarity == Rarity.Rarity.ULTRA_RARE:
 					PlayerDataContainer.playerData.coinCurrency += (15000 + (100 * PlayerDataContainer.playerData.characterBox[unit].level))
 				PlayerDataContainer.playerData.remove_character_from_box(unit)
-				
-					
