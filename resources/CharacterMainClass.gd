@@ -55,7 +55,7 @@ func _set_stage(check_level : int):
 			print("Awakening to maximum stage!")
 			_awaken()
 	else:
-		print("Can't awaken, for whatever reason")
+		print("Can't awaken, this is an ERROR")
 
 func _awaken():
 	charID = charTemplate.awakensInto

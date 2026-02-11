@@ -1,4 +1,5 @@
 extends Resource
+class_name playerData
 
 @export var playerLevel = 1
 @export var playerEXP = 0

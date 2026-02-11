@@ -2,6 +2,11 @@ extends BasePage
 
 func _ready():
 	verify_save_directory(save_file_path) #verifying that the save directory is valid
+	if !ResourceLoader.exists(save_file_path + save_file_name):
+		PlayerDataContainer.playerData = playerData.new()
+		ResourceSaver.save(PlayerDataContainer.playerData, save_file_path + save_file_name)
+	else:
+		pass
 	PlayerDataContainer.playerData = ResourceLoader.load(save_file_path + save_file_name)
 	get_tree().set_auto_accept_quit(false) # Disable automatic quitting
 	PlayerDataContainer.playerData.doAfterLoad()

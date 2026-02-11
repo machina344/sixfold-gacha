@@ -1,21 +1,21 @@
-[gd_scene load_steps=5 format=3 uid="uid://dkd2hrsicq5ft"]
+[gd_scene format=3 uid="uid://dkd2hrsicq5ft"]
 
 [ext_resource type="Texture2D" uid="uid://bem02g4lxta1a" path="res://assets/backgrounds/MainMenu.png" id="1_dqnpd"]
-[ext_resource type="Script" path="res://scenes/main_menu.gd" id="1_g265n"]
+[ext_resource type="Script" uid="uid://bcihomryuuq26" path="res://scenes/main_menu.gd" id="1_g265n"]
 [ext_resource type="Theme" uid="uid://c1vds42xiuak4" path="res://assets/interactables/buttons.tres" id="2_m1fgp"]
 [ext_resource type="Texture2D" uid="uid://wuwitignjtml" path="res://assets/backgrounds/MenuRank.png" id="4_gh3wq"]
 
-[node name="MainMenu" type="Control"]
+[node name="MainMenu" type="Control" unique_id=662889390]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_g265n")
 
-[node name="MainMenu" type="Sprite2D" parent="."]
+[node name="MainMenu" type="Sprite2D" parent="." unique_id=145299469]
 position = Vector2(361, 721)
 scale = Vector2(1, 1.33519)
 texture = ExtResource("1_dqnpd")
 
-[node name="MainMenuButton" type="Button" parent="."]
+[node name="MainMenuButton" type="Button" parent="." unique_id=1967497703]
 layout_mode = 0
 offset_left = 23.0
 offset_top = 1286.0
@@ -26,7 +26,7 @@ disabled = true
 text = "Menu
 "
 
-[node name="SummonButton" type="Button" parent="."]
+[node name="SummonButton" type="Button" parent="." unique_id=1143892813]
 layout_mode = 0
 offset_left = 229.0
 offset_top = 1269.0
@@ -35,7 +35,7 @@ offset_bottom = 1427.0
 theme = ExtResource("2_m1fgp")
 text = "Summon"
 
-[node name="CListButton" type="Button" parent="."]
+[node name="CListButton" type="Button" parent="." unique_id=2123292389]
 layout_mode = 0
 offset_left = 511.0
 offset_top = 1278.0
@@ -45,7 +45,7 @@ theme = ExtResource("2_m1fgp")
 text = "Character Menu
 "
 
-[node name="PlayButton" type="Button" parent="."]
+[node name="PlayButton" type="Button" parent="." unique_id=1503310803]
 layout_mode = 0
 offset_left = 4.0
 offset_top = 905.0
@@ -55,7 +55,7 @@ theme = ExtResource("2_m1fgp")
 text = "PLAY
 "
 
-[node name="MenuRank" type="Sprite2D" parent="."]
+[node name="MenuRank" type="Sprite2D" parent="." unique_id=1951467603]
 position = Vector2(355, 105)
 scale = Vector2(2.45333, 1.93)
 texture = ExtResource("4_gh3wq")
