@@ -30,8 +30,8 @@ UnitInteraction="*res://resources/unitInteraction.gd"
 
 window/size/viewport_width=720
 window/size/viewport_height=1440
-window/size/initial_position_type=2
-window/size/initial_position=Vector2i(100, 0)
+window/size/borderless=true
+window/stretch/mode="canvas_items"
 
 [gui]
 

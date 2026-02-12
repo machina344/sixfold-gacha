@@ -14,15 +14,7 @@ var canAwaken
 func _ready() -> void:
 	currentUnit = UnitInteraction.interactedIndex
 	unit_icon.set_frame(PlayerDataContainer.playerData.characterBox[currentUnit].charID)
-	if PlayerDataContainer.playerData.characterBox[currentUnit].charTemplate.characterRarity == Rarity.Rarity.COMMON:
-		cost = 1000 * (2 ** PlayerDataContainer.playerData.characterBox[currentUnit].stage)
-	elif PlayerDataContainer.playerData.characterBox[currentUnit].charTemplate.characterRarity == Rarity.Rarity.RARE:
-		cost = 2000 * (2 ** PlayerDataContainer.playerData.characterBox[currentUnit].stage)
-	elif PlayerDataContainer.playerData.characterBox[currentUnit].charTemplate.characterRarity == Rarity.Rarity.SUPER_RARE:
-		cost = 4500 * (2 ** PlayerDataContainer.playerData.characterBox[currentUnit].stage)
-	elif PlayerDataContainer.playerData.characterBox[currentUnit].charTemplate.characterRarity == Rarity.Rarity.ULTRA_RARE:
-		cost = 15000 * (2 ** PlayerDataContainer.playerData.characterBox[currentUnit].stage)
-	awakening_button.text = "Awakening Cost: " + str(cost)
+
 	
 
 
@@ -36,6 +28,15 @@ func _process(delta: float) -> void:
 		canAwaken = false
 	else:
 		canAwaken = true
+	if PlayerDataContainer.playerData.characterBox[currentUnit].charTemplate.characterRarity == Rarity.Rarity.COMMON:
+		cost = 1000 * (2 ** PlayerDataContainer.playerData.characterBox[currentUnit].stage)
+	elif PlayerDataContainer.playerData.characterBox[currentUnit].charTemplate.characterRarity == Rarity.Rarity.RARE:
+		cost = 2000 * (2 ** PlayerDataContainer.playerData.characterBox[currentUnit].stage)
+	elif PlayerDataContainer.playerData.characterBox[currentUnit].charTemplate.characterRarity == Rarity.Rarity.SUPER_RARE:
+		cost = 4500 * (2 ** PlayerDataContainer.playerData.characterBox[currentUnit].stage)
+	elif PlayerDataContainer.playerData.characterBox[currentUnit].charTemplate.characterRarity == Rarity.Rarity.ULTRA_RARE:
+		cost = 15000 * (2 ** PlayerDataContainer.playerData.characterBox[currentUnit].stage)
+	awakening_button.text = "Awakening Cost: " + str(cost)
 
 	
 
