@@ -1,6 +1,6 @@
-[gd_scene load_steps=15 format=3 uid="uid://2s0mdqlvg7up"]
+[gd_scene format=3 uid="uid://2s0mdqlvg7up"]
 
-[ext_resource type="Script" path="res://scenes/training_scene.gd" id="1_1wmut"]
+[ext_resource type="Script" uid="uid://6qold2qpyx7" path="res://scenes/training_scene.gd" id="1_1wmut"]
 [ext_resource type="Theme" uid="uid://c1vds42xiuak4" path="res://assets/interactables/buttons.tres" id="2_hmxqr"]
 [ext_resource type="Texture2D" uid="uid://x6vrdemky7j7" path="res://assets/character_images/FeralHogs.png" id="3_2ocut"]
 [ext_resource type="Texture2D" uid="uid://ea264ullhfo5" path="res://assets/character_images/Guy.png" id="4_gs0ow"]
@@ -55,7 +55,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="TrainingScene" type="Control"]
+[node name="TrainingScene" type="Control" unique_id=946988062]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -64,7 +64,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_1wmut")
 
-[node name="Experience1" type="Button" parent="."]
+[node name="Experience1" type="Button" parent="." unique_id=428741260]
 layout_mode = 0
 offset_left = 44.0
 offset_top = 570.0
@@ -73,7 +73,7 @@ offset_bottom = 713.0
 theme = ExtResource("2_hmxqr")
 text = "Give 1000 EXP"
 
-[node name="Experience2" type="Button" parent="."]
+[node name="Experience2" type="Button" parent="." unique_id=225674802]
 layout_mode = 0
 offset_left = 365.0
 offset_top = 577.0
@@ -82,7 +82,7 @@ offset_bottom = 709.0
 theme = ExtResource("2_hmxqr")
 text = "Give 10000 EXP"
 
-[node name="BackButton" type="Button" parent="."]
+[node name="BackButton" type="Button" parent="." unique_id=155104072]
 layout_mode = 0
 offset_left = 16.0
 offset_top = 1299.0
@@ -91,7 +91,7 @@ offset_bottom = 1410.0
 theme = ExtResource("2_hmxqr")
 text = "Back to List"
 
-[node name="InnerBorder" type="ColorRect" parent="."]
+[node name="InnerBorder" type="ColorRect" parent="." unique_id=9891118]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 1
 anchors_preset = -1
@@ -104,13 +104,13 @@ offset_bottom = -897.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="UnitIcon" type="AnimatedSprite2D" parent="InnerBorder"]
+[node name="UnitIcon" type="AnimatedSprite2D" parent="InnerBorder" unique_id=64806922]
 position = Vector2(193, 179)
 sprite_frames = SubResource("SpriteFrames_aj3b0")
 animation = &"Units"
 speed_scale = 0.0
 
-[node name="levelLabel" type="Label" parent="InnerBorder"]
+[node name="levelLabel" type="Label" parent="InnerBorder" unique_id=1774494331]
 layout_mode = 0
 offset_left = 33.0
 offset_top = -83.0
@@ -120,7 +120,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 60
 text = "Lvl: "
 
-[node name="Experience3" type="Button" parent="."]
+[node name="Experience3" type="Button" parent="." unique_id=621679132]
 layout_mode = 0
 offset_left = 179.0
 offset_top = 786.0

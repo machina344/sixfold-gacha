@@ -1,4 +1,5 @@
 extends BasePage
+class_name TrainingScene
 
 @onready var unit_icon: AnimatedSprite2D = $InnerBorder/UnitIcon
 @onready var level_label: Label = $InnerBorder/levelLabel
@@ -8,8 +9,6 @@ var currentUnit
 func _ready() -> void:
 	currentUnit = UnitInteraction.interactedIndex
 	unit_icon.set_frame(PlayerDataContainer.playerData.characterBox[currentUnit].charID)
-	
-
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

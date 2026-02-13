@@ -1,24 +1,29 @@
 extends BasePage
 
 var MultiSize = 10
+var isSummoning = false
 
 @onready var multiButton = get_node("MultiSummon")
 @onready var singleButton = get_node("SingleSummon")
 
 func _on_single_summon_pressed():
-	if PlayerDataContainer.playerData.premiumCurrency >= 10:
+	if PlayerDataContainer.playerData.premiumCurrency >= 10 && isSummoning == false:
 		PlayerDataContainer.playerData.premiumCurrency -= 10
-		await translate_unit_info() 
+		isSummoning = true
+		await translate_unit_info()
+		isSummoning = false
 	else:
 		singleButton.text = "Not Enough Gems!"
 		await get_tree().create_timer(time_in_seconds).timeout
 		singleButton.text = "Single-Summon"
 
 func _on_multi_summon_pressed(): # Multi summon button
-	if PlayerDataContainer.playerData.premiumCurrency >= 100:
+	if PlayerDataContainer.playerData.premiumCurrency >= 100 && isSummoning == false:
 		PlayerDataContainer.playerData.premiumCurrency -= 100
+		isSummoning = true
 		for n in MultiSize:
 			await translate_unit_info()
+		isSummoning = false
 	else:
 		multiButton.text = "Not Enough Gems!"
 		await get_tree().create_timer(time_in_seconds).timeout
@@ -55,6 +60,7 @@ func summon_image(ID, template):
 	await get_tree().create_timer(time_in_seconds).timeout
 	summonFrame.visible = false
 	summonImage.visible = false
+	
 
 func _on_menu_button_pressed():
 	get_tree().change_scene_to_file("res://scenes/MainMenu.tscn")
