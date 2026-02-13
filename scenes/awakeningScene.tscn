@@ -1,6 +1,6 @@
-[gd_scene load_steps=15 format=3 uid="uid://m8oofd23lu2l"]
+[gd_scene format=3 uid="uid://m8oofd23lu2l"]
 
-[ext_resource type="Script" path="res://scenes/awakening_scene.gd" id="1_i7evm"]
+[ext_resource type="Script" uid="uid://cy8kan6tr3mq6" path="res://scenes/awakening_scene.gd" id="1_i7evm"]
 [ext_resource type="Texture2D" uid="uid://x6vrdemky7j7" path="res://assets/character_images/FeralHogs.png" id="2_2lxab"]
 [ext_resource type="Texture2D" uid="uid://ea264ullhfo5" path="res://assets/character_images/Guy.png" id="3_j1ny7"]
 [ext_resource type="Texture2D" uid="uid://bi23461yfd5oc" path="res://assets/character_images/BadGuy.png" id="4_1alcy"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://cvw1cly24ax64" path="res://assets/character_images/FeralerHogs.png" id="11_l0pse"]
 [ext_resource type="Theme" uid="uid://c1vds42xiuak4" path="res://assets/interactables/buttons.tres" id="11_u5s75"]
 [ext_resource type="Texture2D" uid="uid://btwgi4drenq7r" path="res://assets/character_images/SuperGuy.png" id="12_nddgk"]
+[ext_resource type="Texture2D" uid="uid://dipwdbqr2ido8" path="res://assets/character_images/HotdogSupreme.png" id="13_ns020"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_hmpu6"]
 animations = [{
@@ -49,13 +50,16 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("12_nddgk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ns020")
 }],
 "loop": true,
 "name": &"Units",
 "speed": 5.0
 }]
 
-[node name="AwakeningScene" type="Control"]
+[node name="AwakeningScene" type="Control" unique_id=1181697060]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -64,7 +68,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_i7evm")
 
-[node name="InnerBorder" type="ColorRect" parent="."]
+[node name="InnerBorder" type="ColorRect" parent="." unique_id=1089531385]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 1
 anchors_preset = -1
@@ -77,13 +81,13 @@ offset_bottom = -897.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="UnitIcon" type="AnimatedSprite2D" parent="InnerBorder"]
+[node name="UnitIcon" type="AnimatedSprite2D" parent="InnerBorder" unique_id=1896332649]
 position = Vector2(193, 179)
 sprite_frames = SubResource("SpriteFrames_hmpu6")
 animation = &"Units"
 speed_scale = 0.0
 
-[node name="levelLabel" type="Label" parent="InnerBorder"]
+[node name="levelLabel" type="Label" parent="InnerBorder" unique_id=805764108]
 layout_mode = 0
 offset_left = 33.0
 offset_top = -83.0
@@ -93,7 +97,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 60
 text = "Lvl: "
 
-[node name="awakeningLabel" type="Label" parent="InnerBorder"]
+[node name="awakeningLabel" type="Label" parent="InnerBorder" unique_id=427199270]
 layout_mode = 0
 offset_left = 13.0
 offset_top = 384.0
@@ -103,7 +107,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 40
 text = "Awakening: "
 
-[node name="awakeningButton" type="Button" parent="."]
+[node name="awakeningButton" type="Button" parent="." unique_id=1687269633]
 layout_mode = 0
 offset_left = 150.0
 offset_top = 771.0
@@ -112,7 +116,7 @@ offset_bottom = 903.0
 theme = ExtResource("11_u5s75")
 text = "Awaken Character"
 
-[node name="backButton" type="Button" parent="."]
+[node name="backButton" type="Button" parent="." unique_id=1644121749]
 layout_mode = 0
 offset_left = 198.0
 offset_top = 1067.0

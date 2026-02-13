@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://crn250p63axhw" path="res://assets/character_images/Hotdog.png" id="11_kwugi"]
 [ext_resource type="Texture2D" uid="uid://cvw1cly24ax64" path="res://assets/character_images/FeralerHogs.png" id="12_ho602"]
 [ext_resource type="Texture2D" uid="uid://btwgi4drenq7r" path="res://assets/character_images/SuperGuy.png" id="13_vt8hm"]
+[ext_resource type="Texture2D" uid="uid://dipwdbqr2ido8" path="res://assets/character_images/HotdogSupreme.png" id="14_srcyl"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_aj3b0"]
 animations = [{
@@ -49,6 +50,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("13_vt8hm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_srcyl")
 }],
 "loop": true,
 "name": &"Units",

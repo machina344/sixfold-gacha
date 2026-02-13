@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://bat8rpjxdmavc"]
+[gd_scene format=3 uid="uid://bat8rpjxdmavc"]
 
 [ext_resource type="Script" uid="uid://cpde8s0jhdovk" path="res://scenes/inventory_slot.gd" id="1_b3sf3"]
 [ext_resource type="Texture2D" uid="uid://x6vrdemky7j7" path="res://assets/character_images/FeralHogs.png" id="2_b5b6c"]
@@ -14,8 +14,10 @@
 [ext_resource type="Texture2D" uid="uid://x0ukntab74md" path="res://assets/overlays/COverlay.png" id="11_rviv3"]
 [ext_resource type="Texture2D" uid="uid://btwgi4drenq7r" path="res://assets/character_images/SuperGuy.png" id="12_kaubh"]
 [ext_resource type="Texture2D" uid="uid://c7la8pcnk1mia" path="res://assets/overlays/ROverlay.png" id="12_py3a5"]
+[ext_resource type="Texture2D" uid="uid://dipwdbqr2ido8" path="res://assets/character_images/HotdogSupreme.png" id="13_ndqlk"]
 [ext_resource type="Texture2D" uid="uid://csw1d5dpb21pi" path="res://assets/overlays/SROverlay.png" id="13_pxexu"]
 [ext_resource type="Texture2D" uid="uid://bgh26kdjmuwug" path="res://assets/overlays/UROverlay.png" id="14_38ak3"]
+[ext_resource type="Texture2D" uid="uid://b5d78o605d5l" path="res://assets/overlays/LROverlay.png" id="17_vfrdh"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ofqtv"]
 animations = [{
@@ -52,6 +54,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("12_kaubh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ndqlk")
 }],
 "loop": true,
 "name": &"Units",
@@ -72,13 +77,16 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("14_38ak3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_vfrdh")
 }],
 "loop": true,
 "name": &"Borders",
 "speed": 5.0
 }]
 
-[node name="Inventory_Slot" type="Control"]
+[node name="Inventory_Slot" type="Control" unique_id=1014070289]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 3
 anchor_right = 0.226
@@ -87,7 +95,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_b3sf3")
 
-[node name="InnerBorder" type="ColorRect" parent="."]
+[node name="InnerBorder" type="ColorRect" parent="." unique_id=56811889]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 1
 anchors_preset = -1
@@ -99,21 +107,21 @@ offset_bottom = -8.84
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="UnitIcon" type="AnimatedSprite2D" parent="InnerBorder"]
+[node name="UnitIcon" type="AnimatedSprite2D" parent="InnerBorder" unique_id=753043435]
 position = Vector2(76.5125, 76.2625)
 scale = Vector2(0.372733, 0.376511)
 sprite_frames = SubResource("SpriteFrames_ofqtv")
 animation = &"Units"
 speed_scale = 0.0
 
-[node name="UnitBorder" type="AnimatedSprite2D" parent="InnerBorder"]
+[node name="UnitBorder" type="AnimatedSprite2D" parent="InnerBorder" unique_id=1755193484]
 position = Vector2(75.5, 106.5)
 scale = Vector2(0.340694, 0.334444)
 sprite_frames = SubResource("SpriteFrames_js4ww")
 animation = &"Borders"
 speed_scale = 0.0
 
-[node name="UsagePanel" type="ColorRect" parent="."]
+[node name="UsagePanel" type="ColorRect" parent="." unique_id=1436030583]
 visible = false
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 0
@@ -123,7 +131,7 @@ offset_right = 153.0
 offset_bottom = 151.0
 color = Color(1, 1, 1, 0)
 
-[node name="TrainingButton" type="Button" parent="UsagePanel"]
+[node name="TrainingButton" type="Button" parent="UsagePanel" unique_id=289543752]
 custom_minimum_size = Vector2(110, 40)
 layout_mode = 1
 anchors_preset = 5
@@ -135,7 +143,7 @@ offset_bottom = 37.0
 grow_horizontal = 2
 text = "Training"
 
-[node name="AwakeningButton" type="Button" parent="UsagePanel"]
+[node name="AwakeningButton" type="Button" parent="UsagePanel" unique_id=374787411]
 custom_minimum_size = Vector2(110, 40)
 layout_mode = 1
 anchors_preset = 8
@@ -151,7 +159,7 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "Awakening"
 
-[node name="SellButton" type="Button" parent="UsagePanel"]
+[node name="SellButton" type="Button" parent="UsagePanel" unique_id=972417821]
 custom_minimum_size = Vector2(110, 40)
 layout_mode = 1
 anchors_preset = 7
@@ -166,7 +174,7 @@ grow_horizontal = 2
 grow_vertical = 0
 text = "Sell"
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=388965773]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 0
 offset_right = 150.0
@@ -174,7 +182,7 @@ offset_bottom = 150.0
 mouse_filter = 1
 color = Color(1, 1, 1, 0)
 
-[node name="levelLabel" type="Label" parent="."]
+[node name="levelLabel" type="Label" parent="." unique_id=1077619536]
 layout_mode = 0
 offset_left = 101.0
 offset_top = 96.0

@@ -1,6 +1,6 @@
-[gd_scene load_steps=15 format=3 uid="uid://blpwj10wmj2ui"]
+[gd_scene format=3 uid="uid://blpwj10wmj2ui"]
 
-[ext_resource type="Script" path="res://scenes/character_information.gd" id="1_oppip"]
+[ext_resource type="Script" uid="uid://c3g2xjwn84om7" path="res://scenes/character_information.gd" id="1_oppip"]
 [ext_resource type="Texture2D" uid="uid://x6vrdemky7j7" path="res://assets/character_images/FeralHogs.png" id="2_lssi4"]
 [ext_resource type="Texture2D" uid="uid://ea264ullhfo5" path="res://assets/character_images/Guy.png" id="3_1h6jk"]
 [ext_resource type="Texture2D" uid="uid://bi23461yfd5oc" path="res://assets/character_images/BadGuy.png" id="4_msjob"]
@@ -13,6 +13,12 @@
 [ext_resource type="Texture2D" uid="uid://cvw1cly24ax64" path="res://assets/character_images/FeralerHogs.png" id="11_cf0ti"]
 [ext_resource type="Theme" uid="uid://c1vds42xiuak4" path="res://assets/interactables/buttons.tres" id="11_gr8jb"]
 [ext_resource type="Texture2D" uid="uid://btwgi4drenq7r" path="res://assets/character_images/SuperGuy.png" id="12_cvpbj"]
+[ext_resource type="Texture2D" uid="uid://dipwdbqr2ido8" path="res://assets/character_images/HotdogSupreme.png" id="13_7kt3w"]
+[ext_resource type="Texture2D" uid="uid://pptqc6trmjui" path="res://assets/element_images/earth.png" id="13_nm2hs"]
+[ext_resource type="Texture2D" uid="uid://c7x6lbpanmyho" path="res://assets/element_images/fire.png" id="14_7kt3w"]
+[ext_resource type="Texture2D" uid="uid://bhtryyf244vu1" path="res://assets/element_images/lightning.png" id="15_7h3vo"]
+[ext_resource type="Texture2D" uid="uid://bvpbywmx8wqu2" path="res://assets/element_images/water.png" id="16_j0gb4"]
+[ext_resource type="Texture2D" uid="uid://5mu5gt3fc0kt" path="res://assets/element_images/wind.png" id="17_xfb5d"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_mqurh"]
 animations = [{
@@ -49,13 +55,59 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("12_cvpbj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_7kt3w")
 }],
 "loop": true,
 "name": &"Units",
 "speed": 5.0
 }]
 
-[node name="CharacterInformation" type="Control"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_m5kls"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_nm2hs")
+}],
+"loop": true,
+"name": &"Earth",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_7kt3w")
+}],
+"loop": true,
+"name": &"Fire",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_7h3vo")
+}],
+"loop": true,
+"name": &"Lightning",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_j0gb4")
+}],
+"loop": true,
+"name": &"Water",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_xfb5d")
+}],
+"loop": true,
+"name": &"Wind",
+"speed": 5.0
+}]
+
+[node name="CharacterInformation" type="Control" unique_id=1782291749]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -64,7 +116,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_oppip")
 
-[node name="InnerBorder" type="ColorRect" parent="."]
+[node name="InnerBorder" type="ColorRect" parent="." unique_id=2116979086]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 1
 anchors_preset = -1
@@ -77,54 +129,103 @@ offset_bottom = -897.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="UnitIcon" type="AnimatedSprite2D" parent="InnerBorder"]
+[node name="UnitIcon" type="AnimatedSprite2D" parent="InnerBorder" unique_id=609891669]
 position = Vector2(220, 347)
 scale = Vector2(1.8, 1.8)
 sprite_frames = SubResource("SpriteFrames_mqurh")
 animation = &"Units"
 speed_scale = 0.0
 
-[node name="levelLabel" type="Label" parent="InnerBorder"]
+[node name="levelLabel" type="Label" parent="InnerBorder" unique_id=1307573278]
 layout_mode = 0
-offset_left = 33.0
-offset_top = -83.0
-offset_right = 371.0
-offset_bottom = 84.0
+offset_left = -133.0
+offset_top = 711.0
+offset_right = 205.0
+offset_bottom = 772.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 60
+theme_override_font_sizes/font_size = 30
 text = "Lvl: "
 
-[node name="ATKLabel" type="Label" parent="InnerBorder"]
+[node name="attackLabel" type="Label" parent="InnerBorder" unique_id=261020985]
 layout_mode = 0
-offset_left = -130.0
-offset_top = 824.0
-offset_right = 206.0
-offset_bottom = 886.0
+offset_left = 95.0
+offset_top = 753.0
+offset_right = 300.0
+offset_bottom = 792.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 60
-text = "ATK: "
+theme_override_font_sizes/font_size = 30
+text = "Attack: "
 
-[node name="DEFLabel" type="Label" parent="InnerBorder"]
+[node name="defenseLabel" type="Label" parent="InnerBorder" unique_id=2101802151]
 layout_mode = 0
-offset_left = -128.0
-offset_top = 893.0
-offset_right = 494.0
-offset_bottom = 1039.0
+offset_left = 316.0
+offset_top = 754.0
+offset_right = 582.0
+offset_bottom = 797.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 60
-text = "DEF:"
+theme_override_font_sizes/font_size = 30
+text = "Defense:"
 
-[node name="HealthLabel" type="Label" parent="InnerBorder"]
+[node name="healthLabel" type="Label" parent="InnerBorder" unique_id=1655709112]
 layout_mode = 0
-offset_left = -135.0
-offset_top = 752.0
-offset_right = 277.0
-offset_bottom = 842.0
+offset_left = -136.0
+offset_top = 755.0
+offset_right = 100.0
+offset_bottom = 799.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 60
+theme_override_font_sizes/font_size = 30
 text = "Health:"
 
-[node name="BackButton" type="Button" parent="."]
+[node name="leaderLabel" type="Label" parent="InnerBorder" unique_id=2078071353]
+layout_mode = 0
+offset_left = -135.0
+offset_top = 805.0
+offset_right = 578.0
+offset_bottom = 915.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Leader Skill: "
+autowrap_mode = 2
+
+[node name="passiveLabel" type="Label" parent="InnerBorder" unique_id=1533935862]
+layout_mode = 0
+offset_left = -133.0
+offset_top = 919.0
+offset_right = 579.0
+offset_bottom = 1085.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Passive Skill:"
+autowrap_mode = 2
+
+[node name="nameLabel" type="Label" parent="InnerBorder" unique_id=2122044545]
+layout_mode = 0
+offset_left = 20.0
+offset_top = -139.0
+offset_right = 410.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+clip_text = true
+
+[node name="elementIcon" type="AnimatedSprite2D" parent="InnerBorder" unique_id=1710974559]
+position = Vector2(-41.000004, -66)
+scale = Vector2(3.5781248, 3.5781248)
+sprite_frames = SubResource("SpriteFrames_m5kls")
+animation = &"Water"
+
+[node name="rarityLabel" type="Label" parent="InnerBorder" unique_id=1050374957]
+layout_mode = 0
+offset_left = 416.0
+offset_top = -101.0
+offset_right = 550.0
+offset_bottom = -10.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+
+[node name="BackButton" type="Button" parent="." unique_id=913249197]
 layout_mode = 0
 offset_left = 15.0
 offset_top = 1308.0
