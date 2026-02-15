@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cvw1cly24ax64"
-path="res://.godot/imported/FeralerHogs.png-26e7f4908ec678bfc45f4f35bbd80afc.ctex"
+uid="uid://36jjs8eyo23j"
+path="res://.godot/imported/UchihaAkiraIcon.jpg-2b3087fe28391fdc2c4accd50ca8c0ed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/character_images/FeralerHogs.png"
-dest_files=["res://.godot/imported/FeralerHogs.png-26e7f4908ec678bfc45f4f35bbd80afc.ctex"]
+source_file="res://assets/character_icons/UchihaAkiraIcon.jpg"
+dest_files=["res://.godot/imported/UchihaAkiraIcon.jpg-2b3087fe28391fdc2c4accd50ca8c0ed.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://x6vrdemky7j7"
-path="res://.godot/imported/FeralHogs.png-73acb6f377016f9f151ce50b94a1cdee.ctex"
+uid="uid://x0ukntab74md"
+path="res://.godot/imported/COverlay.png-e5c0507272c3ad3ae57ae812ca7ea75f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/character_images/FeralHogs.png"
-dest_files=["res://.godot/imported/FeralHogs.png-73acb6f377016f9f151ce50b94a1cdee.ctex"]
+source_file="res://assets/overlays/rarities/COverlay.png"
+dest_files=["res://.godot/imported/COverlay.png-e5c0507272c3ad3ae57ae812ca7ea75f.ctex"]
 
 [params]
 

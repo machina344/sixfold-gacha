@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://x0ukntab74md"
-path="res://.godot/imported/COverlay.png-012f5e6ca89f5830261613510b5e556e.ctex"
+uid="uid://dwatpxqo2qgs4"
+path="res://.godot/imported/4stars.png-4281e431e85e73010597a6613f899642.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/overlays/COverlay.png"
-dest_files=["res://.godot/imported/COverlay.png-012f5e6ca89f5830261613510b5e556e.ctex"]
+source_file="res://assets/overlays/awakenings/4stars.png"
+dest_files=["res://.godot/imported/4stars.png-4281e431e85e73010597a6613f899642.ctex"]
 
 [params]
 

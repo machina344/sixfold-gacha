@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://owga2c3fmglu"
-path="res://.godot/imported/UchihaAkira.png-eba303dd34372f680b317aafa8d0984b.ctex"
+uid="uid://b0p6m76laelvf"
+path="res://.godot/imported/AwakenedUchihaAkiraFull.jpg-4d3a9eb95296fdf6f3252031a10695e7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/character_images/UchihaAkira.png"
-dest_files=["res://.godot/imported/UchihaAkira.png-eba303dd34372f680b317aafa8d0984b.ctex"]
+source_file="res://assets/character_fulls/AwakenedUchihaAkiraFull.jpg"
+dest_files=["res://.godot/imported/AwakenedUchihaAkiraFull.jpg-4d3a9eb95296fdf6f3252031a10695e7.ctex"]
 
 [params]
 

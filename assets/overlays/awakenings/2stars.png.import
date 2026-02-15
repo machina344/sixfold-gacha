@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dipwdbqr2ido8"
-path="res://.godot/imported/HotdogSupreme.png-4fc6f177647b1e3dac6d157510041364.ctex"
+uid="uid://climux2oopdp5"
+path="res://.godot/imported/2stars.png-c1b7940938c71552fa75e2bf91b9a0ac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/character_images/HotdogSupreme.png"
-dest_files=["res://.godot/imported/HotdogSupreme.png-4fc6f177647b1e3dac6d157510041364.ctex"]
+source_file="res://assets/overlays/awakenings/2stars.png"
+dest_files=["res://.godot/imported/2stars.png-c1b7940938c71552fa75e2bf91b9a0ac.ctex"]
 
 [params]
 

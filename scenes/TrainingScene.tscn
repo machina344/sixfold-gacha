@@ -2,18 +2,31 @@
 
 [ext_resource type="Script" uid="uid://6qold2qpyx7" path="res://scenes/training_scene.gd" id="1_1wmut"]
 [ext_resource type="Theme" uid="uid://c1vds42xiuak4" path="res://assets/interactables/buttons.tres" id="2_hmxqr"]
-[ext_resource type="Texture2D" uid="uid://x6vrdemky7j7" path="res://assets/character_images/FeralHogs.png" id="3_2ocut"]
-[ext_resource type="Texture2D" uid="uid://ea264ullhfo5" path="res://assets/character_images/Guy.png" id="4_gs0ow"]
-[ext_resource type="Texture2D" uid="uid://bi23461yfd5oc" path="res://assets/character_images/BadGuy.png" id="5_bjjoa"]
-[ext_resource type="Texture2D" uid="uid://owga2c3fmglu" path="res://assets/character_images/UchihaAkira.png" id="6_thnsg"]
-[ext_resource type="Texture2D" uid="uid://dp3k2fhxf3r0d" path="res://assets/character_images/UchihaItami.png" id="7_2x15i"]
-[ext_resource type="Texture2D" uid="uid://dyiii4y35dcer" path="res://assets/character_images/SenjuTarashi.png" id="8_4dnbi"]
-[ext_resource type="Texture2D" uid="uid://covqhp67oxm8c" path="res://assets/character_images/UchihaSetsuna.png" id="9_d8rjl"]
-[ext_resource type="Texture2D" uid="uid://cskwhqgeixman" path="res://assets/character_images/HyugaHeika.png" id="10_1sp8r"]
-[ext_resource type="Texture2D" uid="uid://crn250p63axhw" path="res://assets/character_images/Hotdog.png" id="11_kwugi"]
-[ext_resource type="Texture2D" uid="uid://cvw1cly24ax64" path="res://assets/character_images/FeralerHogs.png" id="12_ho602"]
-[ext_resource type="Texture2D" uid="uid://btwgi4drenq7r" path="res://assets/character_images/SuperGuy.png" id="13_vt8hm"]
-[ext_resource type="Texture2D" uid="uid://dipwdbqr2ido8" path="res://assets/character_images/HotdogSupreme.png" id="14_srcyl"]
+[ext_resource type="Texture2D" uid="uid://x6vrdemky7j7" path="res://assets/character_icons/FeralHogs.png" id="3_2ocut"]
+[ext_resource type="Texture2D" uid="uid://ea264ullhfo5" path="res://assets/character_icons/Guy.png" id="4_gs0ow"]
+[ext_resource type="Texture2D" uid="uid://bi23461yfd5oc" path="res://assets/character_icons/BadGuy.png" id="5_bjjoa"]
+[ext_resource type="Texture2D" uid="uid://c8od2r7ie3trl" path="res://assets/character_fulls/UchihaAkiraFull.jpg" id="5_smbfj"]
+[ext_resource type="Texture2D" uid="uid://dp3k2fhxf3r0d" path="res://assets/character_icons/UchihaItami.png" id="7_2x15i"]
+[ext_resource type="Texture2D" uid="uid://dyiii4y35dcer" path="res://assets/character_icons/SenjuTarashi.png" id="8_4dnbi"]
+[ext_resource type="Texture2D" uid="uid://covqhp67oxm8c" path="res://assets/character_icons/UchihaSetsuna.png" id="9_d8rjl"]
+[ext_resource type="Texture2D" uid="uid://cskwhqgeixman" path="res://assets/character_icons/HyugaHeika.png" id="10_1sp8r"]
+[ext_resource type="Texture2D" uid="uid://crn250p63axhw" path="res://assets/character_icons/Hotdog.png" id="11_kwugi"]
+[ext_resource type="Texture2D" uid="uid://cvw1cly24ax64" path="res://assets/character_icons/FeralerHogs.png" id="12_ho602"]
+[ext_resource type="Texture2D" uid="uid://btwgi4drenq7r" path="res://assets/character_icons/SuperGuy.png" id="13_vt8hm"]
+[ext_resource type="Texture2D" uid="uid://b0p6m76laelvf" path="res://assets/character_fulls/AwakenedUchihaAkiraFull.jpg" id="14_iuc74"]
+[ext_resource type="Texture2D" uid="uid://pptqc6trmjui" path="res://assets/element_images/earth.png" id="14_smbfj"]
+[ext_resource type="Texture2D" uid="uid://dipwdbqr2ido8" path="res://assets/character_icons/HotdogSupreme.png" id="14_srcyl"]
+[ext_resource type="Texture2D" uid="uid://c7x6lbpanmyho" path="res://assets/element_images/fire.png" id="15_io1ho"]
+[ext_resource type="Texture2D" uid="uid://bhtryyf244vu1" path="res://assets/element_images/lightning.png" id="16_wn243"]
+[ext_resource type="Texture2D" uid="uid://bvpbywmx8wqu2" path="res://assets/element_images/water.png" id="17_4ht8a"]
+[ext_resource type="Texture2D" uid="uid://5mu5gt3fc0kt" path="res://assets/element_images/wind.png" id="18_4p6qe"]
+[ext_resource type="Texture2D" uid="uid://cpjdy8b633gt1" path="res://assets/overlays/awakenings/0stars.png" id="20_t65f0"]
+[ext_resource type="Texture2D" uid="uid://bp66u4j362epp" path="res://assets/overlays/awakenings/1star.png" id="21_iuc74"]
+[ext_resource type="Texture2D" uid="uid://climux2oopdp5" path="res://assets/overlays/awakenings/2stars.png" id="22_3r64j"]
+[ext_resource type="Texture2D" uid="uid://bp2ympa8ynin6" path="res://assets/overlays/awakenings/3stars.png" id="23_nmpvl"]
+[ext_resource type="Texture2D" uid="uid://dwatpxqo2qgs4" path="res://assets/overlays/awakenings/4stars.png" id="24_8yiks"]
+[ext_resource type="Texture2D" uid="uid://edx21wlfoewe" path="res://assets/overlays/awakenings/5stars.png" id="25_rifdb"]
+[ext_resource type="Texture2D" uid="uid://cbxiplhmdu4yu" path="res://assets/overlays/awakenings/6stars.png" id="26_hgoxv"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_aj3b0"]
 animations = [{
@@ -28,7 +41,7 @@ animations = [{
 "texture": ExtResource("5_bjjoa")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_thnsg")
+"texture": ExtResource("5_smbfj")
 }, {
 "duration": 1.0,
 "texture": ExtResource("7_2x15i")
@@ -53,9 +66,84 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("14_srcyl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_iuc74")
 }],
 "loop": true,
 "name": &"Units",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mgawa"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_smbfj")
+}],
+"loop": true,
+"name": &"Earth",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_io1ho")
+}],
+"loop": true,
+"name": &"Fire",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_wn243")
+}],
+"loop": true,
+"name": &"Lightning",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_4ht8a")
+}],
+"loop": true,
+"name": &"Water",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_4p6qe")
+}],
+"loop": true,
+"name": &"Wind",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cdmtj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_t65f0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_iuc74")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_3r64j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_nmpvl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_8yiks")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_rifdb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_hgoxv")
+}],
+"loop": true,
+"name": &"stars",
 "speed": 5.0
 }]
 
@@ -68,70 +156,113 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_1wmut")
 
+[node name="InnerBorder" type="ColorRect" parent="." unique_id=9891118]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="UnitFull" type="AnimatedSprite2D" parent="InnerBorder" unique_id=64806922]
+sprite_frames = SubResource("SpriteFrames_aj3b0")
+animation = &"Units"
+speed_scale = 0.0
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=774370519]
+layout_mode = 0
+offset_left = -6.0
+offset_top = 880.0
+offset_right = 725.0
+offset_bottom = 1445.0
+color = Color(0, 0, 0, 0.39215687)
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=1959005610]
+layout_mode = 0
+offset_left = -23.0
+offset_top = -13.0
+offset_right = 738.0
+offset_bottom = 177.0
+color = Color(0, 0, 0, 0.39215687)
+
+[node name="nameLabel" type="Label" parent="ColorRect2" unique_id=1658138769]
+layout_mode = 0
+offset_left = 183.25
+offset_top = 41.0
+offset_right = 573.25
+offset_bottom = 180.0
+theme_override_font_sizes/font_size = 60
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+clip_text = true
+
+[node name="elementIcon" type="AnimatedSprite2D" parent="ColorRect2" unique_id=324105903]
+position = Vector2(122.25, 114)
+scale = Vector2(3.5781248, 3.5781248)
+sprite_frames = SubResource("SpriteFrames_mgawa")
+animation = &"Water"
+
+[node name="rarityLabel" type="Label" parent="ColorRect2" unique_id=1452245851]
+layout_mode = 0
+offset_left = 579.25
+offset_top = 79.0
+offset_right = 713.25
+offset_bottom = 170.0
+theme_override_font_sizes/font_size = 60
+
 [node name="Experience1" type="Button" parent="." unique_id=428741260]
 layout_mode = 0
-offset_left = 44.0
-offset_top = 570.0
-offset_right = 312.0
-offset_bottom = 713.0
+offset_left = 10.0
+offset_top = 1101.0
+offset_right = 243.0
+offset_bottom = 1288.0
 theme = ExtResource("2_hmxqr")
 text = "Give 1000 EXP"
 
 [node name="Experience2" type="Button" parent="." unique_id=225674802]
 layout_mode = 0
-offset_left = 365.0
-offset_top = 577.0
-offset_right = 626.0
-offset_bottom = 709.0
+offset_left = 250.0
+offset_top = 1100.0
+offset_right = 471.0
+offset_bottom = 1289.0
 theme = ExtResource("2_hmxqr")
 text = "Give 10000 EXP"
 
 [node name="BackButton" type="Button" parent="." unique_id=155104072]
 layout_mode = 0
-offset_left = 16.0
-offset_top = 1299.0
-offset_right = 256.0
-offset_bottom = 1410.0
+offset_left = 12.0
+offset_top = 1314.0
+offset_right = 245.0
+offset_bottom = 1425.0
 theme = ExtResource("2_hmxqr")
 text = "Back to List"
 
-[node name="InnerBorder" type="ColorRect" parent="." unique_id=9891118]
-custom_minimum_size = Vector2(150, 150)
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 138.0
-offset_top = 180.0
-offset_right = -194.0
-offset_bottom = -897.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="UnitIcon" type="AnimatedSprite2D" parent="InnerBorder" unique_id=64806922]
-position = Vector2(193, 179)
-sprite_frames = SubResource("SpriteFrames_aj3b0")
-animation = &"Units"
-speed_scale = 0.0
-
-[node name="levelLabel" type="Label" parent="InnerBorder" unique_id=1774494331]
+[node name="Experience3" type="Button" parent="." unique_id=621679132]
 layout_mode = 0
-offset_left = 33.0
-offset_top = -83.0
-offset_right = 371.0
-offset_bottom = 84.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+offset_left = 481.0
+offset_top = 1099.0
+offset_right = 709.0
+offset_bottom = 1290.0
+theme = ExtResource("2_hmxqr")
+text = "Give 1000000 EXP"
+
+[node name="levelLabel" type="Label" parent="." unique_id=1774494331]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 1034.0
+offset_right = 352.0
+offset_bottom = 1099.0
 theme_override_font_sizes/font_size = 60
 text = "Lvl: "
 
-[node name="Experience3" type="Button" parent="." unique_id=621679132]
-layout_mode = 0
-offset_left = 179.0
-offset_top = 786.0
-offset_right = 495.0
-offset_bottom = 913.0
-theme = ExtResource("2_hmxqr")
-text = "Give 1000000 EXP"
+[node name="awakeningLevel" type="AnimatedSprite2D" parent="." unique_id=274141133]
+position = Vector2(360, 960)
+scale = Vector2(1.4, 1.4)
+sprite_frames = SubResource("SpriteFrames_cdmtj")
+animation = &"stars"
 
 [connection signal="pressed" from="Experience1" to="." method="_on_experience_1_pressed"]
 [connection signal="pressed" from="Experience2" to="." method="_on_experience_2_pressed"]

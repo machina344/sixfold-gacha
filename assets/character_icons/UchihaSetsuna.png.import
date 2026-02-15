@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cskwhqgeixman"
-path="res://.godot/imported/HyugaHeika.png-00c34230e1d3075a6707cb4244fa6acf.ctex"
+uid="uid://covqhp67oxm8c"
+path="res://.godot/imported/UchihaSetsuna.png-4e97b90aff9fd9ae5d8447a3204e4c71.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/character_images/HyugaHeika.png"
-dest_files=["res://.godot/imported/HyugaHeika.png-00c34230e1d3075a6707cb4244fa6acf.ctex"]
+source_file="res://assets/character_icons/UchihaSetsuna.png"
+dest_files=["res://.godot/imported/UchihaSetsuna.png-4e97b90aff9fd9ae5d8447a3204e4c71.ctex"]
 
 [params]
 

@@ -1,23 +1,31 @@
 [gd_scene format=3 uid="uid://bat8rpjxdmavc"]
 
 [ext_resource type="Script" uid="uid://cpde8s0jhdovk" path="res://scenes/inventory_slot.gd" id="1_b3sf3"]
-[ext_resource type="Texture2D" uid="uid://x6vrdemky7j7" path="res://assets/character_images/FeralHogs.png" id="2_b5b6c"]
-[ext_resource type="Texture2D" uid="uid://bi23461yfd5oc" path="res://assets/character_images/BadGuy.png" id="2_dtsw6"]
-[ext_resource type="Texture2D" uid="uid://ea264ullhfo5" path="res://assets/character_images/Guy.png" id="3_yhtih"]
-[ext_resource type="Texture2D" uid="uid://owga2c3fmglu" path="res://assets/character_images/UchihaAkira.png" id="5_k6tcy"]
-[ext_resource type="Texture2D" uid="uid://dp3k2fhxf3r0d" path="res://assets/character_images/UchihaItami.png" id="6_p0nnd"]
-[ext_resource type="Texture2D" uid="uid://dyiii4y35dcer" path="res://assets/character_images/SenjuTarashi.png" id="7_mdnuv"]
-[ext_resource type="Texture2D" uid="uid://covqhp67oxm8c" path="res://assets/character_images/UchihaSetsuna.png" id="8_x0425"]
-[ext_resource type="Texture2D" uid="uid://cskwhqgeixman" path="res://assets/character_images/HyugaHeika.png" id="9_kihri"]
-[ext_resource type="Texture2D" uid="uid://crn250p63axhw" path="res://assets/character_images/Hotdog.png" id="10_gy5ga"]
-[ext_resource type="Texture2D" uid="uid://cvw1cly24ax64" path="res://assets/character_images/FeralerHogs.png" id="11_kpu0a"]
-[ext_resource type="Texture2D" uid="uid://x0ukntab74md" path="res://assets/overlays/COverlay.png" id="11_rviv3"]
-[ext_resource type="Texture2D" uid="uid://btwgi4drenq7r" path="res://assets/character_images/SuperGuy.png" id="12_kaubh"]
-[ext_resource type="Texture2D" uid="uid://c7la8pcnk1mia" path="res://assets/overlays/ROverlay.png" id="12_py3a5"]
-[ext_resource type="Texture2D" uid="uid://dipwdbqr2ido8" path="res://assets/character_images/HotdogSupreme.png" id="13_ndqlk"]
-[ext_resource type="Texture2D" uid="uid://csw1d5dpb21pi" path="res://assets/overlays/SROverlay.png" id="13_pxexu"]
-[ext_resource type="Texture2D" uid="uid://bgh26kdjmuwug" path="res://assets/overlays/UROverlay.png" id="14_38ak3"]
-[ext_resource type="Texture2D" uid="uid://b5d78o605d5l" path="res://assets/overlays/LROverlay.png" id="17_vfrdh"]
+[ext_resource type="Texture2D" uid="uid://x6vrdemky7j7" path="res://assets/character_icons/FeralHogs.png" id="2_b5b6c"]
+[ext_resource type="Texture2D" uid="uid://bi23461yfd5oc" path="res://assets/character_icons/BadGuy.png" id="2_dtsw6"]
+[ext_resource type="Texture2D" uid="uid://ea264ullhfo5" path="res://assets/character_icons/Guy.png" id="3_yhtih"]
+[ext_resource type="Texture2D" uid="uid://36jjs8eyo23j" path="res://assets/character_icons/UchihaAkiraIcon.jpg" id="5_h1so0"]
+[ext_resource type="Texture2D" uid="uid://dp3k2fhxf3r0d" path="res://assets/character_icons/UchihaItami.png" id="6_p0nnd"]
+[ext_resource type="Texture2D" uid="uid://dyiii4y35dcer" path="res://assets/character_icons/SenjuTarashi.png" id="7_mdnuv"]
+[ext_resource type="Texture2D" uid="uid://covqhp67oxm8c" path="res://assets/character_icons/UchihaSetsuna.png" id="8_x0425"]
+[ext_resource type="Texture2D" uid="uid://cskwhqgeixman" path="res://assets/character_icons/HyugaHeika.png" id="9_kihri"]
+[ext_resource type="Texture2D" uid="uid://crn250p63axhw" path="res://assets/character_icons/Hotdog.png" id="10_gy5ga"]
+[ext_resource type="Texture2D" uid="uid://cvw1cly24ax64" path="res://assets/character_icons/FeralerHogs.png" id="11_kpu0a"]
+[ext_resource type="Texture2D" uid="uid://x0ukntab74md" path="res://assets/overlays/rarities/COverlay.png" id="11_rviv3"]
+[ext_resource type="Texture2D" uid="uid://btwgi4drenq7r" path="res://assets/character_icons/SuperGuy.png" id="12_kaubh"]
+[ext_resource type="Texture2D" uid="uid://c7la8pcnk1mia" path="res://assets/overlays/rarities/ROverlay.png" id="12_py3a5"]
+[ext_resource type="Texture2D" uid="uid://dipwdbqr2ido8" path="res://assets/character_icons/HotdogSupreme.png" id="13_ndqlk"]
+[ext_resource type="Texture2D" uid="uid://csw1d5dpb21pi" path="res://assets/overlays/rarities/SROverlay.png" id="13_pxexu"]
+[ext_resource type="Texture2D" uid="uid://bgh26kdjmuwug" path="res://assets/overlays/rarities/UROverlay.png" id="14_38ak3"]
+[ext_resource type="Texture2D" uid="uid://b3ifppf7dygir" path="res://assets/character_icons/AwakenedUchihaAkiraIcon.jpg" id="14_oi2l8"]
+[ext_resource type="Texture2D" uid="uid://b5d78o605d5l" path="res://assets/overlays/rarities/LROverlay.png" id="17_vfrdh"]
+[ext_resource type="Texture2D" uid="uid://cpjdy8b633gt1" path="res://assets/overlays/awakenings/0stars.png" id="19_h1so0"]
+[ext_resource type="Texture2D" uid="uid://bp66u4j362epp" path="res://assets/overlays/awakenings/1star.png" id="20_oi2l8"]
+[ext_resource type="Texture2D" uid="uid://climux2oopdp5" path="res://assets/overlays/awakenings/2stars.png" id="21_02c50"]
+[ext_resource type="Texture2D" uid="uid://bp2ympa8ynin6" path="res://assets/overlays/awakenings/3stars.png" id="22_uorhr"]
+[ext_resource type="Texture2D" uid="uid://dwatpxqo2qgs4" path="res://assets/overlays/awakenings/4stars.png" id="23_e5ht8"]
+[ext_resource type="Texture2D" uid="uid://edx21wlfoewe" path="res://assets/overlays/awakenings/5stars.png" id="24_h3pu4"]
+[ext_resource type="Texture2D" uid="uid://cbxiplhmdu4yu" path="res://assets/overlays/awakenings/6stars.png" id="25_4kjnt"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ofqtv"]
 animations = [{
@@ -32,7 +40,7 @@ animations = [{
 "texture": ExtResource("2_dtsw6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_k6tcy")
+"texture": ExtResource("5_h1so0")
 }, {
 "duration": 1.0,
 "texture": ExtResource("6_p0nnd")
@@ -57,6 +65,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("13_ndqlk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_oi2l8")
 }],
 "loop": true,
 "name": &"Units",
@@ -86,6 +97,35 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_s0bym"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_h1so0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_oi2l8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_02c50")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_uorhr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_e5ht8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_h3pu4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_4kjnt")
+}],
+"loop": true,
+"name": &"stars",
+"speed": 5.0
+}]
+
 [node name="Inventory_Slot" type="Control" unique_id=1014070289]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 3
@@ -96,29 +136,26 @@ grow_vertical = 2
 script = ExtResource("1_b3sf3")
 
 [node name="InnerBorder" type="ColorRect" parent="." unique_id=56811889]
+clip_contents = true
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 1.0
-offset_right = -9.72
-offset_bottom = -8.84
+offset_left = 8.0
+offset_top = 10.0
+offset_right = -6.720001
+offset_bottom = -1.8399963
 grow_horizontal = 2
 grow_vertical = 2
+color = Color(0, 0, 0, 1)
 
 [node name="UnitIcon" type="AnimatedSprite2D" parent="InnerBorder" unique_id=753043435]
-position = Vector2(76.5125, 76.2625)
-scale = Vector2(0.372733, 0.376511)
+position = Vector2(75, 75)
+scale = Vector2(0.37, 0.37)
 sprite_frames = SubResource("SpriteFrames_ofqtv")
 animation = &"Units"
-speed_scale = 0.0
-
-[node name="UnitBorder" type="AnimatedSprite2D" parent="InnerBorder" unique_id=1755193484]
-position = Vector2(75.5, 106.5)
-scale = Vector2(0.340694, 0.334444)
-sprite_frames = SubResource("SpriteFrames_js4ww")
-animation = &"Borders"
+frame = 3
 speed_scale = 0.0
 
 [node name="UsagePanel" type="ColorRect" parent="." unique_id=1436030583]
@@ -188,8 +225,20 @@ offset_left = 101.0
 offset_top = 96.0
 offset_right = 152.0
 offset_bottom = 113.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Lvl: "
+
+[node name="UnitBorder" type="AnimatedSprite2D" parent="." unique_id=1755193484]
+position = Vector2(75, 109.00001)
+scale = Vector2(0.34951365, 0.334444)
+sprite_frames = SubResource("SpriteFrames_js4ww")
+animation = &"Borders"
+speed_scale = 0.0
+
+[node name="awakeningLevel" type="AnimatedSprite2D" parent="." unique_id=1928189468]
+position = Vector2(78, 16)
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_s0bym")
+animation = &"stars"
 
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
 [connection signal="mouse_exited" from="UsagePanel" to="." method="_on_usage_panel_mouse_exited"]

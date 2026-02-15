@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b5d78o605d5l"
-path="res://.godot/imported/LROverlay.png-b644ba1372da030803a8f8e8f62a6b4b.ctex"
+uid="uid://crn250p63axhw"
+path="res://.godot/imported/Hotdog.png-6bf31b34eade90842911a855465a6024.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/overlays/LROverlay.png"
-dest_files=["res://.godot/imported/LROverlay.png-b644ba1372da030803a8f8e8f62a6b4b.ctex"]
+source_file="res://assets/character_icons/Hotdog.png"
+dest_files=["res://.godot/imported/Hotdog.png-6bf31b34eade90842911a855465a6024.ctex"]
 
 [params]
 

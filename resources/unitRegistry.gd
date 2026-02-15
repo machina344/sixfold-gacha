@@ -8,7 +8,7 @@ var unitDict = {}
 var commonHogs = registerNew(Rarity.Rarity.COMMON, '30-50 Hogs', 1, 1, 0, 1, 1, 1, 8, 8, 8, 'Earth', 'N/A', '+10% attack in combat', 0, 0, 0, 0, 0, true, 9)
 var rareGuy = registerNew(Rarity.Rarity.RARE, 'Guy', 1, 1, 0, 1, 1, 1, 8, 8, 8, 'Wind', 'N/A', '+10% attack in combat', 0, 0, 0, 0, 0, true, 10)
 var rareBadGuy = registerNew(Rarity.Rarity.RARE, 'Bad Guy', 1, 1, 0, 1, 1, 1, 8, 8, 8, 'Fire', 'N/A', '+10% attack in combat', 0, 0, 0, 0, 0, true)
-var superRareUchihaAkira = registerNew(Rarity.Rarity.SUPER_RARE, 'Uchiha Akira', 1, 1, 0, 1, 1, 1, 8, 8, 8, 'Fire', 'N/A', '+10% attack in combat', 0, 0, 0, 0, 0, true)
+var superRareUchihaAkira = registerNew(Rarity.Rarity.SUPER_RARE, 'Uchiha Akira', 1, 1, 0, 1, 1, 1, 8, 8, 8, 'Fire', 'N/A', '+10% attack in combat', 0, 0, 0, 0, 0, true, 12)
 var superRareUchihaItami = registerNew(Rarity.Rarity.SUPER_RARE, 'Uchiha Itami', 1, 1, 0, 1, 1, 1, 8, 8, 8, 'Lightning', 'N/A', '+10% attack in combat', 0, 0, 0, 0, 0, true)
 var superRareSenjuTarashi = registerNew(Rarity.Rarity.SUPER_RARE, 'Senju Tarashi', 1, 1, 0, 1, 1, 1, 8, 8, 8, 'Earth', 'N/A', '+10% attack in combat', 0, 0, 0, 0, 0, true)
 var ultraRareUchihaSetsuna = registerNew(Rarity.Rarity.ULTRA_RARE, 'Uchiha Setsuna', 1, 1, 0, 1, 1, 1, 8, 8, 8, 'Fire', 'N/A', '+10% attack in combat', 0, 0, 0, 0, 0, true)
@@ -20,6 +20,7 @@ var ultraRareHotdog = registerNew(Rarity.Rarity.ULTRA_RARE, 'Hotdog', 1, 1, 0, 1
 var rareHogs = registerNew(Rarity.Rarity.RARE, '30-50 Feral Hogs', 1, 1, 6, 2, 2, 2, 10, 10, 10, 'Earth', 'N/A', '+10% attack in combat', 0, 0, 0, 0, 0, false)
 var superRareGuy = registerNew(Rarity.Rarity.SUPER_RARE, 'Super Guy', 1, 1, 6, 2, 2, 2, 10, 10, 10, 'Wind', 'N/A', '+10% attack in combat', 0, 0, 0, 0, 0, false)
 var legendaryRareHotdog = registerNew(Rarity.Rarity.LEGENDARY_RARE, 'Hotdog Supreme', 1, 1, 6, 150, 100, 100, 18, 11, 9, 'Water', '[Inspiration] - All Allies +100% Health, Attack, and Defense in combat', '[Imagine this!] - +50% Damage Reduction and 2 Guaranteed Additional Attacks', 50, 0, 0, 0, 200, false)
+var ultraRareUchihaAkira = registerNew(Rarity.Rarity.ULTRA_RARE, 'Uchiha Akira [Chuunin]', 1, 1, 6, 60, 90, 75, 9, 14, 11, 'Fire', '[Natural-Born Leader] - All \'Uchiha\' Allies +20% Health in combat', '[Sharingan!] - +20% attack in combat, +30% chance to dodge enemy attacks', 0, 30, 20, 0, 0, false)
 
 var rng = RandomNumberGenerator.new()
 

@@ -1,8 +1,9 @@
 extends Control
 
 @onready var unit_icon: AnimatedSprite2D = $InnerBorder/UnitIcon
-@onready var unit_border: AnimatedSprite2D = $InnerBorder/UnitBorder
+@onready var unit_border: AnimatedSprite2D = $UnitBorder
 @onready var level_label: Label = $levelLabel
+@onready var awakening_level: AnimatedSprite2D = $awakeningLevel
 
 
 var unit = null
@@ -17,6 +18,7 @@ func set_unit(new_unit_index):
 	unit_icon.set_frame(PlayerDataContainer.playerData.characterBox[new_unit_index].charID)
 	unit_border.set_frame(PlayerDataContainer.playerData.characterBox[new_unit_index].charTemplate.characterRarity)
 	level_label.text = "Lvl: " + str(PlayerDataContainer.playerData.characterBox[new_unit_index].level)
+	awakening_level.set_frame(PlayerDataContainer.playerData.characterBox[new_unit_index].stage)
 	
 
 func _on_color_rect_gui_input(event: InputEvent):

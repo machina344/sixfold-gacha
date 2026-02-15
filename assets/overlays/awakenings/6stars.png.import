@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dyiii4y35dcer"
-path="res://.godot/imported/SenjuTarashi.png-f4e0f9b79d72859f88b51f9c1b07dabd.ctex"
+uid="uid://cbxiplhmdu4yu"
+path="res://.godot/imported/6stars.png-bb50e2ec1251104516685312d447c1b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/character_images/SenjuTarashi.png"
-dest_files=["res://.godot/imported/SenjuTarashi.png-f4e0f9b79d72859f88b51f9c1b07dabd.ctex"]
+source_file="res://assets/overlays/awakenings/6stars.png"
+dest_files=["res://.godot/imported/6stars.png-bb50e2ec1251104516685312d447c1b6.ctex"]
 
 [params]
 

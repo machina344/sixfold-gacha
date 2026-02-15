@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bi23461yfd5oc"
-path="res://.godot/imported/BadGuy.png-b11b63c173b3afb7f414c89c7bd1dc2a.ctex"
+uid="uid://c8od2r7ie3trl"
+path="res://.godot/imported/UchihaAkiraFull.jpg-72b1babdd7ead67b9018d649ef3c2bfa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/character_images/BadGuy.png"
-dest_files=["res://.godot/imported/BadGuy.png-b11b63c173b3afb7f414c89c7bd1dc2a.ctex"]
+source_file="res://assets/character_fulls/UchihaAkiraFull.jpg"
+dest_files=["res://.godot/imported/UchihaAkiraFull.jpg-72b1babdd7ead67b9018d649ef3c2bfa.ctex"]
 
 [params]
 

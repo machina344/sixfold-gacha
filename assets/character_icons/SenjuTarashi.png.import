@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c7la8pcnk1mia"
-path="res://.godot/imported/ROverlay.png-b3e76a23a093b0d3d6f9ba9d45597b9e.ctex"
+uid="uid://dyiii4y35dcer"
+path="res://.godot/imported/SenjuTarashi.png-1ef50b33d2aff96bd3eeaa3e25bf6d60.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/overlays/ROverlay.png"
-dest_files=["res://.godot/imported/ROverlay.png-b3e76a23a093b0d3d6f9ba9d45597b9e.ctex"]
+source_file="res://assets/character_icons/SenjuTarashi.png"
+dest_files=["res://.godot/imported/SenjuTarashi.png-1ef50b33d2aff96bd3eeaa3e25bf6d60.ctex"]
 
 [params]
 

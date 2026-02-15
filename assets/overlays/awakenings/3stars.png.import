@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ea264ullhfo5"
-path="res://.godot/imported/Guy.png-521a3acd1f6631c0c9f6bb650e947f93.ctex"
+uid="uid://bp2ympa8ynin6"
+path="res://.godot/imported/3stars.png-49c8f4bcba93371d965405a9a9ec3218.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/character_images/Guy.png"
-dest_files=["res://.godot/imported/Guy.png-521a3acd1f6631c0c9f6bb650e947f93.ctex"]
+source_file="res://assets/overlays/awakenings/3stars.png"
+dest_files=["res://.godot/imported/3stars.png-49c8f4bcba93371d965405a9a9ec3218.ctex"]
 
 [params]
 

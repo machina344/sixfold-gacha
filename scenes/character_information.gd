@@ -1,15 +1,16 @@
 extends BasePage
 
-@onready var unit_icon: AnimatedSprite2D = $InnerBorder/UnitIcon
-@onready var level_label: Label = $InnerBorder/levelLabel
-@onready var atk_label: Label = $InnerBorder/attackLabel
-@onready var def_label: Label = $InnerBorder/defenseLabel
-@onready var health_label: Label = $InnerBorder/healthLabel
-@onready var leader_label: Label = $InnerBorder/leaderLabel
-@onready var passive_label: Label = $InnerBorder/passiveLabel
-@onready var name_label: Label = $InnerBorder/nameLabel
-@onready var element_icon: AnimatedSprite2D = $InnerBorder/elementIcon
-@onready var rarity_label: Label = $InnerBorder/rarityLabel
+@onready var unit_icon: AnimatedSprite2D = $InnerBorder/UnitFull
+@onready var level_label: Label = $ColorRect2/levelLabel
+@onready var atk_label: Label = $ColorRect2/attackLabel
+@onready var def_label: Label = $ColorRect2/defenseLabel
+@onready var health_label: Label = $ColorRect2/healthLabel
+@onready var leader_label: Label = $ColorRect2/leaderLabel
+@onready var passive_label: Label = $ColorRect2/passiveLabel
+@onready var name_label: Label = $ColorRect/nameLabel
+@onready var element_icon: AnimatedSprite2D = $ColorRect/elementIcon
+@onready var rarity_label: Label = $ColorRect/rarityLabel
+@onready var awakening_level: AnimatedSprite2D = $ColorRect2/awakeningLevel
 
 var currentUnit
 
@@ -25,6 +26,7 @@ func _ready() -> void:
 	name_label.text = str(PlayerDataContainer.playerData.characterBox[currentUnit].charTemplate.name)
 	element_icon.set_animation(str(PlayerDataContainer.playerData.characterBox[currentUnit].charTemplate.element))
 	element_icon.set_frame(0)
+	awakening_level.set_frame(PlayerDataContainer.playerData.characterBox[currentUnit].stage)
 	if PlayerDataContainer.playerData.characterBox[currentUnit].charTemplate.characterRarity == 0:
 		rarity_label.text = "[C]"
 	elif PlayerDataContainer.playerData.characterBox[currentUnit].charTemplate.characterRarity == 1:

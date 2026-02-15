@@ -1,19 +1,32 @@
 [gd_scene format=3 uid="uid://m8oofd23lu2l"]
 
 [ext_resource type="Script" uid="uid://cy8kan6tr3mq6" path="res://scenes/awakening_scene.gd" id="1_i7evm"]
-[ext_resource type="Texture2D" uid="uid://x6vrdemky7j7" path="res://assets/character_images/FeralHogs.png" id="2_2lxab"]
-[ext_resource type="Texture2D" uid="uid://ea264ullhfo5" path="res://assets/character_images/Guy.png" id="3_j1ny7"]
-[ext_resource type="Texture2D" uid="uid://bi23461yfd5oc" path="res://assets/character_images/BadGuy.png" id="4_1alcy"]
-[ext_resource type="Texture2D" uid="uid://owga2c3fmglu" path="res://assets/character_images/UchihaAkira.png" id="5_rlfcs"]
-[ext_resource type="Texture2D" uid="uid://dp3k2fhxf3r0d" path="res://assets/character_images/UchihaItami.png" id="6_6yds6"]
-[ext_resource type="Texture2D" uid="uid://dyiii4y35dcer" path="res://assets/character_images/SenjuTarashi.png" id="7_p1sll"]
-[ext_resource type="Texture2D" uid="uid://covqhp67oxm8c" path="res://assets/character_images/UchihaSetsuna.png" id="8_2ftog"]
-[ext_resource type="Texture2D" uid="uid://cskwhqgeixman" path="res://assets/character_images/HyugaHeika.png" id="9_8vh88"]
-[ext_resource type="Texture2D" uid="uid://crn250p63axhw" path="res://assets/character_images/Hotdog.png" id="10_use8o"]
-[ext_resource type="Texture2D" uid="uid://cvw1cly24ax64" path="res://assets/character_images/FeralerHogs.png" id="11_l0pse"]
+[ext_resource type="Texture2D" uid="uid://x6vrdemky7j7" path="res://assets/character_icons/FeralHogs.png" id="2_2lxab"]
+[ext_resource type="Texture2D" uid="uid://ea264ullhfo5" path="res://assets/character_icons/Guy.png" id="3_j1ny7"]
+[ext_resource type="Texture2D" uid="uid://bi23461yfd5oc" path="res://assets/character_icons/BadGuy.png" id="4_1alcy"]
+[ext_resource type="Texture2D" uid="uid://c8od2r7ie3trl" path="res://assets/character_fulls/UchihaAkiraFull.jpg" id="5_lfv3t"]
+[ext_resource type="Texture2D" uid="uid://dp3k2fhxf3r0d" path="res://assets/character_icons/UchihaItami.png" id="6_6yds6"]
+[ext_resource type="Texture2D" uid="uid://dyiii4y35dcer" path="res://assets/character_icons/SenjuTarashi.png" id="7_p1sll"]
+[ext_resource type="Texture2D" uid="uid://covqhp67oxm8c" path="res://assets/character_icons/UchihaSetsuna.png" id="8_2ftog"]
+[ext_resource type="Texture2D" uid="uid://cskwhqgeixman" path="res://assets/character_icons/HyugaHeika.png" id="9_8vh88"]
+[ext_resource type="Texture2D" uid="uid://crn250p63axhw" path="res://assets/character_icons/Hotdog.png" id="10_use8o"]
+[ext_resource type="Texture2D" uid="uid://cvw1cly24ax64" path="res://assets/character_icons/FeralerHogs.png" id="11_l0pse"]
 [ext_resource type="Theme" uid="uid://c1vds42xiuak4" path="res://assets/interactables/buttons.tres" id="11_u5s75"]
-[ext_resource type="Texture2D" uid="uid://btwgi4drenq7r" path="res://assets/character_images/SuperGuy.png" id="12_nddgk"]
-[ext_resource type="Texture2D" uid="uid://dipwdbqr2ido8" path="res://assets/character_images/HotdogSupreme.png" id="13_ns020"]
+[ext_resource type="Texture2D" uid="uid://btwgi4drenq7r" path="res://assets/character_icons/SuperGuy.png" id="12_nddgk"]
+[ext_resource type="Texture2D" uid="uid://dipwdbqr2ido8" path="res://assets/character_icons/HotdogSupreme.png" id="13_ns020"]
+[ext_resource type="Texture2D" uid="uid://b0p6m76laelvf" path="res://assets/character_fulls/AwakenedUchihaAkiraFull.jpg" id="14_ch3d2"]
+[ext_resource type="Texture2D" uid="uid://cpjdy8b633gt1" path="res://assets/overlays/awakenings/0stars.png" id="15_lfv3t"]
+[ext_resource type="Texture2D" uid="uid://bp66u4j362epp" path="res://assets/overlays/awakenings/1star.png" id="16_ch3d2"]
+[ext_resource type="Texture2D" uid="uid://climux2oopdp5" path="res://assets/overlays/awakenings/2stars.png" id="17_ky2cc"]
+[ext_resource type="Texture2D" uid="uid://bp2ympa8ynin6" path="res://assets/overlays/awakenings/3stars.png" id="18_d7jjk"]
+[ext_resource type="Texture2D" uid="uid://dwatpxqo2qgs4" path="res://assets/overlays/awakenings/4stars.png" id="19_khoqo"]
+[ext_resource type="Texture2D" uid="uid://edx21wlfoewe" path="res://assets/overlays/awakenings/5stars.png" id="20_i1bfx"]
+[ext_resource type="Texture2D" uid="uid://cbxiplhmdu4yu" path="res://assets/overlays/awakenings/6stars.png" id="21_5sjas"]
+[ext_resource type="Texture2D" uid="uid://pptqc6trmjui" path="res://assets/element_images/earth.png" id="22_2mobv"]
+[ext_resource type="Texture2D" uid="uid://c7x6lbpanmyho" path="res://assets/element_images/fire.png" id="23_0a5fa"]
+[ext_resource type="Texture2D" uid="uid://bhtryyf244vu1" path="res://assets/element_images/lightning.png" id="24_3ydnu"]
+[ext_resource type="Texture2D" uid="uid://bvpbywmx8wqu2" path="res://assets/element_images/water.png" id="25_qtvkr"]
+[ext_resource type="Texture2D" uid="uid://5mu5gt3fc0kt" path="res://assets/element_images/wind.png" id="26_jwka0"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_hmpu6"]
 animations = [{
@@ -28,7 +41,7 @@ animations = [{
 "texture": ExtResource("4_1alcy")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_rlfcs")
+"texture": ExtResource("5_lfv3t")
 }, {
 "duration": 1.0,
 "texture": ExtResource("6_6yds6")
@@ -53,9 +66,84 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("13_ns020")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_ch3d2")
 }],
 "loop": true,
 "name": &"Units",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_l62eq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_lfv3t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_ch3d2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_ky2cc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_d7jjk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_khoqo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_i1bfx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_5sjas")
+}],
+"loop": true,
+"name": &"stars",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ki7nn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_2mobv")
+}],
+"loop": true,
+"name": &"Earth",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_0a5fa")
+}],
+"loop": true,
+"name": &"Fire",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_3ydnu")
+}],
+"loop": true,
+"name": &"Lightning",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_qtvkr")
+}],
+"loop": true,
+"name": &"Water",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_jwka0")
+}],
+"loop": true,
+"name": &"Wind",
 "speed": 5.0
 }]
 
@@ -69,61 +157,92 @@ grow_vertical = 2
 script = ExtResource("1_i7evm")
 
 [node name="InnerBorder" type="ColorRect" parent="." unique_id=1089531385]
-custom_minimum_size = Vector2(150, 150)
 layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 138.0
-offset_top = 180.0
-offset_right = -194.0
-offset_bottom = -897.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="UnitIcon" type="AnimatedSprite2D" parent="InnerBorder" unique_id=1896332649]
-position = Vector2(193, 179)
+[node name="UnitFull" type="AnimatedSprite2D" parent="InnerBorder" unique_id=1896332649]
 sprite_frames = SubResource("SpriteFrames_hmpu6")
 animation = &"Units"
 speed_scale = 0.0
 
-[node name="levelLabel" type="Label" parent="InnerBorder" unique_id=805764108]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=959445797]
 layout_mode = 0
-offset_left = 33.0
-offset_top = -83.0
-offset_right = 371.0
-offset_bottom = 84.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 60
-text = "Lvl: "
+offset_left = -2.0
+offset_top = 834.0
+offset_right = 724.0
+offset_bottom = 1445.0
+color = Color(0, 0, 0, 0.39215687)
 
-[node name="awakeningLabel" type="Label" parent="InnerBorder" unique_id=427199270]
+[node name="backButton" type="Button" parent="ColorRect" unique_id=1644121749]
 layout_mode = 0
-offset_left = 13.0
-offset_top = 384.0
-offset_right = 361.0
-offset_bottom = 455.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 40
-text = "Awakening: "
-
-[node name="awakeningButton" type="Button" parent="." unique_id=1687269633]
-layout_mode = 0
-offset_left = 150.0
-offset_top = 771.0
-offset_right = 504.0
-offset_bottom = 903.0
-theme = ExtResource("11_u5s75")
-text = "Awaken Character"
-
-[node name="backButton" type="Button" parent="." unique_id=1644121749]
-layout_mode = 0
-offset_left = 198.0
-offset_top = 1067.0
-offset_right = 470.0
-offset_bottom = 1188.0
+offset_left = 12.0
+offset_top = 453.0
+offset_right = 293.0
+offset_bottom = 595.0
 theme = ExtResource("11_u5s75")
 text = "Back to Character Menu"
 
-[connection signal="pressed" from="awakeningButton" to="." method="_on_awakening_button_pressed"]
-[connection signal="pressed" from="backButton" to="." method="_on_back_button_pressed"]
+[node name="awakeningButton" type="Button" parent="ColorRect" unique_id=1687269633]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 263.0
+offset_right = 695.0
+offset_bottom = 438.0
+theme = ExtResource("11_u5s75")
+text = "Awaken Character"
+
+[node name="levelLabel" type="Label" parent="ColorRect" unique_id=805764108]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 193.0
+offset_right = 363.0
+offset_bottom = 360.0
+theme_override_font_sizes/font_size = 60
+text = "Lvl: "
+
+[node name="awakeningLevel" type="AnimatedSprite2D" parent="ColorRect" unique_id=616204194]
+position = Vector2(360, 80)
+scale = Vector2(1.4, 1.4)
+sprite_frames = SubResource("SpriteFrames_l62eq")
+animation = &"stars"
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=449347407]
+layout_mode = 0
+offset_right = 725.0
+offset_bottom = 183.0
+color = Color(0, 0, 0, 0.39215687)
+
+[node name="nameLabel" type="Label" parent="ColorRect2" unique_id=103136363]
+layout_mode = 0
+offset_left = 158.0
+offset_top = 41.0
+offset_right = 548.0
+offset_bottom = 180.0
+theme_override_font_sizes/font_size = 60
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+clip_text = true
+
+[node name="elementIcon" type="AnimatedSprite2D" parent="ColorRect2" unique_id=2124245297]
+position = Vector2(97, 114)
+scale = Vector2(3.5781248, 3.5781248)
+sprite_frames = SubResource("SpriteFrames_ki7nn")
+animation = &"Water"
+
+[node name="rarityLabel" type="Label" parent="ColorRect2" unique_id=1078842328]
+layout_mode = 0
+offset_left = 554.0
+offset_top = 79.0
+offset_right = 688.0
+offset_bottom = 170.0
+theme_override_font_sizes/font_size = 60
+
+[connection signal="pressed" from="ColorRect/backButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="ColorRect/awakeningButton" to="." method="_on_awakening_button_pressed"]

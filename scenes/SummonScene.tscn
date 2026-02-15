@@ -1,22 +1,22 @@
-[gd_scene load_steps=19 format=3 uid="uid://bvupkyofykd7q"]
+[gd_scene format=3 uid="uid://bvupkyofykd7q"]
 
 [ext_resource type="Theme" uid="uid://c1vds42xiuak4" path="res://assets/interactables/buttons.tres" id="1_dhpfl"]
-[ext_resource type="Script" path="res://scenes/summon_scene.gd" id="1_yxd1t"]
+[ext_resource type="Script" uid="uid://xy4okd6qf7v" path="res://scenes/summon_scene.gd" id="1_yxd1t"]
 [ext_resource type="Texture2D" uid="uid://ck5m7hkwawwmk" path="res://assets/backgrounds/SummonScreen.png" id="2_ra40d"]
-[ext_resource type="Texture2D" uid="uid://x6vrdemky7j7" path="res://assets/character_images/FeralHogs.png" id="4_ecdn6"]
-[ext_resource type="Texture2D" uid="uid://x0ukntab74md" path="res://assets/overlays/COverlay.png" id="4_g2wec"]
-[ext_resource type="Texture2D" uid="uid://c7la8pcnk1mia" path="res://assets/overlays/ROverlay.png" id="5_qco1a"]
-[ext_resource type="Texture2D" uid="uid://ea264ullhfo5" path="res://assets/character_images/Guy.png" id="5_rkjw8"]
-[ext_resource type="Texture2D" uid="uid://bi23461yfd5oc" path="res://assets/character_images/BadGuy.png" id="6_7iab1"]
-[ext_resource type="Texture2D" uid="uid://csw1d5dpb21pi" path="res://assets/overlays/SROverlay.png" id="6_tarvw"]
-[ext_resource type="Texture2D" uid="uid://owga2c3fmglu" path="res://assets/character_images/UchihaAkira.png" id="7_35sen"]
-[ext_resource type="Texture2D" uid="uid://bgh26kdjmuwug" path="res://assets/overlays/UROverlay.png" id="8_ed6ho"]
-[ext_resource type="Texture2D" uid="uid://dp3k2fhxf3r0d" path="res://assets/character_images/UchihaItami.png" id="8_joer5"]
+[ext_resource type="Texture2D" uid="uid://x6vrdemky7j7" path="res://assets/character_icons/FeralHogs.png" id="4_ecdn6"]
+[ext_resource type="Texture2D" uid="uid://x0ukntab74md" path="res://assets/overlays/rarities/COverlay.png" id="4_g2wec"]
+[ext_resource type="Texture2D" uid="uid://c7la8pcnk1mia" path="res://assets/overlays/rarities/ROverlay.png" id="5_qco1a"]
+[ext_resource type="Texture2D" uid="uid://ea264ullhfo5" path="res://assets/character_icons/Guy.png" id="5_rkjw8"]
+[ext_resource type="Texture2D" uid="uid://bi23461yfd5oc" path="res://assets/character_icons/BadGuy.png" id="6_7iab1"]
+[ext_resource type="Texture2D" uid="uid://csw1d5dpb21pi" path="res://assets/overlays/rarities/SROverlay.png" id="6_tarvw"]
+[ext_resource type="Texture2D" uid="uid://36jjs8eyo23j" path="res://assets/character_icons/UchihaAkiraIcon.jpg" id="7_r4t5y"]
+[ext_resource type="Texture2D" uid="uid://bgh26kdjmuwug" path="res://assets/overlays/rarities/UROverlay.png" id="8_ed6ho"]
+[ext_resource type="Texture2D" uid="uid://dp3k2fhxf3r0d" path="res://assets/character_icons/UchihaItami.png" id="8_joer5"]
 [ext_resource type="Texture2D" uid="uid://wuwitignjtml" path="res://assets/backgrounds/MenuRank.png" id="9_rtcew"]
-[ext_resource type="Texture2D" uid="uid://dyiii4y35dcer" path="res://assets/character_images/SenjuTarashi.png" id="9_xgc7y"]
-[ext_resource type="Texture2D" uid="uid://covqhp67oxm8c" path="res://assets/character_images/UchihaSetsuna.png" id="10_pyup1"]
-[ext_resource type="Texture2D" uid="uid://cskwhqgeixman" path="res://assets/character_images/HyugaHeika.png" id="11_rsmot"]
-[ext_resource type="Texture2D" uid="uid://crn250p63axhw" path="res://assets/character_images/Hotdog.png" id="12_c70ll"]
+[ext_resource type="Texture2D" uid="uid://dyiii4y35dcer" path="res://assets/character_icons/SenjuTarashi.png" id="9_xgc7y"]
+[ext_resource type="Texture2D" uid="uid://covqhp67oxm8c" path="res://assets/character_icons/UchihaSetsuna.png" id="10_pyup1"]
+[ext_resource type="Texture2D" uid="uid://cskwhqgeixman" path="res://assets/character_icons/HyugaHeika.png" id="11_rsmot"]
+[ext_resource type="Texture2D" uid="uid://crn250p63axhw" path="res://assets/character_icons/Hotdog.png" id="12_c70ll"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ooebg"]
 animations = [{
@@ -31,7 +31,7 @@ animations = [{
 "texture": ExtResource("6_7iab1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_35sen")
+"texture": ExtResource("7_r4t5y")
 }, {
 "duration": 1.0,
 "texture": ExtResource("8_joer5")
@@ -53,18 +53,18 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="SummonScene" type="Control"]
+[node name="SummonScene" type="Control" unique_id=1417025175]
 visibility_layer = 512
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_yxd1t")
 
-[node name="SummonScreen" type="Sprite2D" parent="."]
+[node name="SummonScreen" type="Sprite2D" parent="." unique_id=829860049]
 position = Vector2(359, 720)
 scale = Vector2(1, 1.33148)
 texture = ExtResource("2_ra40d")
 
-[node name="SingleSummon" type="Button" parent="."]
+[node name="SingleSummon" type="Button" parent="." unique_id=1242963494]
 layout_mode = 0
 offset_left = 48.0
 offset_top = 975.0
@@ -74,7 +74,7 @@ theme = ExtResource("1_dhpfl")
 text = "Single-Summon
 "
 
-[node name="MultiSummon" type="Button" parent="."]
+[node name="MultiSummon" type="Button" parent="." unique_id=360939179]
 layout_mode = 0
 offset_left = 390.0
 offset_top = 977.0
@@ -84,34 +84,34 @@ theme = ExtResource("1_dhpfl")
 text = "Multi-Summon
 "
 
-[node name="SummonIcons" type="AnimatedSprite2D" parent="."]
+[node name="SummonIcons" type="AnimatedSprite2D" parent="." unique_id=2098644080]
 visible = false
 position = Vector2(365, 605)
 sprite_frames = SubResource("SpriteFrames_ooebg")
 animation = &"Units"
 speed_scale = 0.0
 
-[node name="COverlay" type="Sprite2D" parent="."]
+[node name="COverlay" type="Sprite2D" parent="." unique_id=1066594278]
 visible = false
 position = Vector2(365, 691)
 texture = ExtResource("4_g2wec")
 
-[node name="ROverlay" type="Sprite2D" parent="."]
+[node name="ROverlay" type="Sprite2D" parent="." unique_id=1334219041]
 visible = false
 position = Vector2(364, 690)
 texture = ExtResource("5_qco1a")
 
-[node name="SrOverlay" type="Sprite2D" parent="."]
+[node name="SrOverlay" type="Sprite2D" parent="." unique_id=1925142414]
 visible = false
 position = Vector2(365, 689)
 texture = ExtResource("6_tarvw")
 
-[node name="UrOverlay" type="Sprite2D" parent="."]
+[node name="UrOverlay" type="Sprite2D" parent="." unique_id=243047872]
 visible = false
 position = Vector2(366, 690)
 texture = ExtResource("8_ed6ho")
 
-[node name="DisabledSummonButton" type="Button" parent="."]
+[node name="DisabledSummonButton" type="Button" parent="." unique_id=336187909]
 layout_mode = 0
 offset_left = 220.0
 offset_top = 1253.0
@@ -121,7 +121,7 @@ theme = ExtResource("1_dhpfl")
 disabled = true
 text = "Summon"
 
-[node name="MenuButton" type="Button" parent="."]
+[node name="MenuButton" type="Button" parent="." unique_id=853826688]
 layout_mode = 0
 offset_left = 20.0
 offset_top = 1269.0
@@ -131,7 +131,7 @@ theme = ExtResource("1_dhpfl")
 text = "Menu
 "
 
-[node name="characterMenuButton" type="Button" parent="."]
+[node name="characterMenuButton" type="Button" parent="." unique_id=1884032413]
 layout_mode = 0
 offset_left = 510.0
 offset_top = 1268.0
@@ -141,7 +141,7 @@ theme = ExtResource("1_dhpfl")
 text = "Character Menu
 "
 
-[node name="MenuRank" type="Sprite2D" parent="."]
+[node name="MenuRank" type="Sprite2D" parent="." unique_id=2003053501]
 position = Vector2(350, 110)
 scale = Vector2(2.45667, 1.93)
 texture = ExtResource("9_rtcew")

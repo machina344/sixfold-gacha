@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://btwgi4drenq7r"
-path="res://.godot/imported/SuperGuy.png-15ff82977df06b4610d166192f24ea7c.ctex"
+uid="uid://dp3k2fhxf3r0d"
+path="res://.godot/imported/UchihaItami.png-8dd71ca4764a555a64abea1f8f3bbc57.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/character_images/SuperGuy.png"
-dest_files=["res://.godot/imported/SuperGuy.png-15ff82977df06b4610d166192f24ea7c.ctex"]
+source_file="res://assets/character_icons/UchihaItami.png"
+dest_files=["res://.godot/imported/UchihaItami.png-8dd71ca4764a555a64abea1f8f3bbc57.ctex"]
 
 [params]
 

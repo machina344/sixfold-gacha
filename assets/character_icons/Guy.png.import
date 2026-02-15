@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://covqhp67oxm8c"
-path="res://.godot/imported/UchihaSetsuna.png-0777c50a39f25cda493f420f1eefbfc3.ctex"
+uid="uid://ea264ullhfo5"
+path="res://.godot/imported/Guy.png-8f4634d3d3fcfce57c2794f4382dc479.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/character_images/UchihaSetsuna.png"
-dest_files=["res://.godot/imported/UchihaSetsuna.png-0777c50a39f25cda493f420f1eefbfc3.ctex"]
+source_file="res://assets/character_icons/Guy.png"
+dest_files=["res://.godot/imported/Guy.png-8f4634d3d3fcfce57c2794f4382dc479.ctex"]
 
 [params]
 
